@@ -1,0 +1,8 @@
+<HTML>
+<Title> My first form </Title>
+<Body>
+<form actions = "/submit-form" method="post">
+<!-- Form elements will go here -->
+</form>
+</Body>
+</HTML>
