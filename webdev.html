@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pupil - Web Development</title>
+
+    <link rel="stylesheet" href="webdev.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="logo">
+            Pupil
+        </div>
+
+        <nav>
+
+            <a href="#html">HTML</a>
+            <a href="#css">CSS</a>
+            <a href="#javascript">JavaScript</a>
+            <a href="#project">Project</a>
+
+        </nav>
+
+    </header>
+
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="badge">
+                Pupil Web Development
+            </span>
+
+            <h1>
+                Learn Web Development
+            </h1>
+
+            <p>
+                Learn HTML, CSS and JavaScript and build
+                your first interactive website.
+            </p>
+
+            <button onclick="startCourse()">
+                Start Course
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section class="progress-section">
+
+        <h2>Your Progress</h2>
+
+        <div class="progress-container">
+
+            <div id="progressBar"></div>
+
+        </div>
+
+        <p id="progressText">
+            0% Completed
+        </p>
+
+    </section>
+
+
+    <main>
+
+
+        <!-- HTML MODULE -->
+
+        <section class="module" id="html">
+
+            <div class="module-title">
+
+                <span>01</span>
+
+                <div>
+
+                    <h2>HTML</h2>
+
+                    <p>
+                        Build the structure of webpages
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="lesson-grid">
+
+                <article class="lesson">
+
+                    <h3>What is HTML?</h3>
+
+                    <p>
+                        HTML stands for HyperText Markup Language.
+                        It provides the structure of a webpage.
+                    </p>
+
+                </article>
+
+
+                <article class="lesson">
+
+                    <h3>Important Tags</h3>
+
+                    <ul>
+
+                        <li>Headings</li>
+                        <li>Paragraphs</li>
+                        <li>Links</li>
+                        <li>Images</li>
+                        <li>Forms</li>
+                        <li>Tables</li>
+
+                    </ul>
+
+                </article>
+
+            </div>
+
+
+            <div class="code-example">
+
+                <h3>Example</h3>
+
+                <pre>
+&lt;h1&gt;My Website&lt;/h1&gt;
+
+&lt;p&gt;Welcome to my website!&lt;/p&gt;
+
+&lt;button&gt;Click Me&lt;/button&gt;
+        </pre>
+
+            </div>
+
+
+            <button class="complete-btn" data-module="html">
+
+                Mark HTML Complete
+
+            </button>
+
+        </section>
+
+
+
+        <!-- CSS MODULE -->
+
+        <section class="module" id="css">
+
+            <div class="module-title">
+
+                <span>02</span>
+
+                <div>
+
+                    <h2>CSS</h2>
+
+                    <p>
+                        Design beautiful webpages
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="lesson-grid">
+
+                <article class="lesson">
+
+                    <h3>What is CSS?</h3>
+
+                    <p>
+                        CSS controls the appearance and layout
+                        of HTML elements.
+                    </p>
+
+                </article>
+
+
+                <article class="lesson">
+
+                    <h3>Important Concepts</h3>
+
+                    <ul>
+
+                        <li>Selectors</li>
+                        <li>Colors</li>
+                        <li>Box Model</li>
+                        <li>Flexbox</li>
+                        <li>Grid</li>
+                        <li>Responsive Design</li>
+
+                    </ul>
+
+                </article>
+
+            </div>
+
+
+            <div class="code-example">
+
+                <h3>Example</h3>
+
+                <pre>
+body {
+    background: #f4f4f4;
+}
+
+h1 {
+    color: blue;
+}
+
+button {
+    padding: 10px;
+}
+        </pre>
+
+            </div>
+
+
+            <button class="complete-btn" data-module="css">
+
+                Mark CSS Complete
+
+            </button>
+
+        </section>
+
+
+
+        <!-- JAVASCRIPT MODULE -->
+
+        <section class="module" id="javascript">
+
+            <div class="module-title">
+
+                <span>03</span>
+
+                <div>
+
+                    <h2>JavaScript</h2>
+
+                    <p>
+                        Make webpages interactive
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="lesson-grid">
+
+                <article class="lesson">
+
+                    <h3>What is JavaScript?</h3>
+
+                    <p>
+                        JavaScript adds logic and interaction
+                        to webpages.
+                    </p>
+
+                </article>
+
+
+                <article class="lesson">
+
+                    <h3>Important Concepts</h3>
+
+                    <ul>
+
+                        <li>Variables</li>
+                        <li>Functions</li>
+                        <li>Arrays</li>
+                        <li>Objects</li>
+                        <li>DOM</li>
+                        <li>Events</li>
+
+                    </ul>
+
+                </article>
+
+            </div>
+
+
+            <div class="interactive-demo">
+
+                <h3>Try JavaScript</h3>
+
+                <p id="demoText">
+                    Click the button below.
+                </p>
+
+                <button onclick="runDemo()">
+                    Run JavaScript
+                </button>
+
+            </div>
+
+
+            <div class="code-example">
+
+                <h3>Example</h3>
+
+                <pre>
+const button = document.querySelector("button");
+
+button.addEventListener("click", function() {
+
+    alert("Hello Pupil!");
+
+});
+        </pre>
+
+            </div>
+
+
+            <button class="complete-btn" data-module="javascript">
+
+                Mark JavaScript Complete
+
+            </button>
+
+        </section>
+
+
+
+        <!-- FINAL PROJECT -->
+
+        <section class="project" id="project">
+
+            <h2>Final Project</h2>
+
+            <p>
+                Combine HTML, CSS and JavaScript to create
+                your own interactive webpage.
+            </p>
+
+
+            <div class="project-stack">
+
+                <div>
+                    <strong>HTML</strong>
+                    <span>Structure</span>
+                </div>
+
+                <div>
+                    <strong>CSS</strong>
+                    <span>Design</span>
+                </div>
+
+                <div>
+                    <strong>JavaScript</strong>
+                    <span>Interaction</span>
+                </div>
+
+            </div>
+
+
+            <button onclick="startProject()">
+                Start Final Project
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Pupil Learning Platform
+        </p>
+
+    </footer>
+
+
+    <script src="webdev.js"></script>
+
+</body>
+
+</html>
