@@ -711,6 +711,6 @@ Always follow the licensing and usage terms of the original resource.
 
 ### 🚀 Learn. Build. Practice. Share.
 
-**PUPIL — Open Source Computer Science Learning Platform**
+** PUPIL — Open Source Computer Science Learning Platform **
 
 </div>
