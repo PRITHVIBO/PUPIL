@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pupil - an open source college curriculum in Web Development, AI/ML, DevOps, Cloud, DSA and System Design">
-  <title>Home | Pupil</title>
+  <meta name="description" content="All six open source tracks on Pupil - Web Dev, AI/ML, DevOps, Cloud, DSA, System Design">
+  <title>Courses | Pupil</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="alternate icon" href="favicon.ico">
   <link rel="stylesheet" href="css/style.css">
@@ -22,8 +22,8 @@
     </div>
     <nav class="site-nav">
       <ul>
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="courses.html">Courses</a></li>
         <li><a href="resources.html">Resources</a></li>
         <li><a href="quiz.html">Quiz</a></li>
         <li><a href="about.html">About</a></li>
@@ -34,36 +34,23 @@
 
   <!-- ================= MAIN ================= -->
   <main>
-    <section class="hero">
-      <img class="banner" src="images/hero.svg" alt="Open source computer science program">
-      <h2>An Open Curriculum For Computer Science</h2>
-      <p>
-        Pupil is an <strong>open source learning platform</strong> for college computer science.
-        We run six tracks &mdash; <em>Web Development, AI/ML, DevOps, Cloud Computing, DSA and System Design</em>
-        &mdash; and the whole curriculum is <mark>open: readable, forkable and improvable by anyone</mark>.
-      </p>
-      <p>
-        We do not write yet another closed course. We curate the best openly published material from
-        <a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a>,
-        <a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener">GeeksforGeeks</a>,
-        <a href="https://stackoverflow.com/" target="_blank" rel="noopener">Stack Overflow</a>,
-        <a href="https://takeuforward.org/" target="_blank" rel="noopener">takeUforward</a> and others,
-        arrange it into a semester plan, and teach it in the lab.
-      </p>
-      <p>
-        <a class="btn" href="courses.html">Browse All Courses</a>
-        <a class="btn btn-alt" href="resources.html">See The Sources</a>
-        <button class="btn btn-line" onclick="showGreeting()">Say Hello</button>
-      </p>
-      <p id="greeting"></p>
-    </section>
-
-    <hr>
+    <h2>All Courses</h2>
+    <p class="lead">
+      Six open source tracks for college computer science. Every module links to the
+      original tutorial it is taught from, so you always know where the material came from.
+    </p>
 
     <section>
-      <h3>Our Six Tracks</h3>
-      <p>Pick any track. There is no admission test and no fixed batch &mdash; start where you are.</p>
-      <div class="card-area">
+      <h3>Find A Course</h3>
+      <p>
+        <label for="search">Type a course or a topic:</label><br>
+        <input type="text" id="search" placeholder="try: cloud, dsa, docker, react" onkeyup="filterCourses()">
+      </p>
+      <p id="searchInfo"></p>
+    </section>
+
+    <section>
+      <div class="card-area" id="courseList">
       <article class="card">
         <a href="webdev.html">
           <img src="images/webdev.svg" alt="Web Development course">
@@ -71,6 +58,11 @@
         <h3>Web Development</h3>
         <p>Build real websites and full stack apps with HTML, CSS, JavaScript, React and Node.</p>
         <p class="tags"><strong>Topics:</strong> web, webdev, html, css, javascript, js, react, node, express, frontend, backend, full stack, mern</p>
+        <ul>
+          <li>Level: Beginner to Intermediate</li>
+          <li>Duration: 13 weeks</li>
+          <li>Credits: 4</li>
+        </ul>
         <p>
           <a class="btn" href="webdev.html">Open Course</a>
           <a class="btn btn-alt" href="https://www.youtube.com/@freecodecamp" target="_blank" rel="noopener">Watch Videos</a>
@@ -84,6 +76,11 @@
         <h3>AI / Machine Learning</h3>
         <p>Learn Python for data, the maths behind models, and train real ML models with scikit-learn.</p>
         <p class="tags"><strong>Topics:</strong> ai, ml, aiml, machine learning, python, data science, numpy, pandas, scikit-learn, deep learning, neural network, nlp</p>
+        <ul>
+          <li>Level: Intermediate</li>
+          <li>Duration: 14 weeks</li>
+          <li>Credits: 4</li>
+        </ul>
         <p>
           <a class="btn" href="aiml.html">Open Course</a>
           <a class="btn btn-alt" href="https://www.youtube.com/@krishnaik06" target="_blank" rel="noopener">Watch Videos</a>
@@ -97,6 +94,11 @@
         <h3>DevOps</h3>
         <p>Linux, Git, Docker, Kubernetes and CI/CD pipelines that ship code automatically.</p>
         <p class="tags"><strong>Topics:</strong> devops, linux, shell, git, docker, kubernetes, k8s, ci/cd, jenkins, github actions, terraform, ansible</p>
+        <ul>
+          <li>Level: Intermediate</li>
+          <li>Duration: 12 weeks</li>
+          <li>Credits: 3</li>
+        </ul>
         <p>
           <a class="btn" href="devops.html">Open Course</a>
           <a class="btn btn-alt" href="https://www.youtube.com/@TechWorldwithNana" target="_blank" rel="noopener">Watch Videos</a>
@@ -110,6 +112,11 @@
         <h3>Cloud Computing</h3>
         <p>Virtualisation, AWS, Azure and GCP core services, serverless and cloud security.</p>
         <p class="tags"><strong>Topics:</strong> cloud, aws, azure, gcp, ec2, s3, lambda, serverless, virtualisation, iaas, paas, saas</p>
+        <ul>
+          <li>Level: Beginner to Intermediate</li>
+          <li>Duration: 12 weeks</li>
+          <li>Credits: 3</li>
+        </ul>
         <p>
           <a class="btn" href="cloud.html">Open Course</a>
           <a class="btn btn-alt" href="https://www.youtube.com/@freecodecamp" target="_blank" rel="noopener">Watch Videos</a>
@@ -123,6 +130,11 @@
         <h3>Data Structures &amp; Algorithms</h3>
         <p>The complete Striver A2Z path: arrays to graphs to dynamic programming, with 450+ problems.</p>
         <p class="tags"><strong>Topics:</strong> dsa, data structures, algorithms, striver, takeuforward, leetcode, arrays, trees, graphs, dp, recursion, placement</p>
+        <ul>
+          <li>Level: Core &mdash; all branches</li>
+          <li>Duration: 16 weeks</li>
+          <li>Credits: 4</li>
+        </ul>
         <p>
           <a class="btn" href="dsa.html">Open Course</a>
           <a class="btn btn-alt" href="https://www.youtube.com/@takeUforward" target="_blank" rel="noopener">Watch Videos</a>
@@ -136,6 +148,11 @@
         <h3>System Design</h3>
         <p>HLD and LLD: scaling, caching, sharding, queues, microservices and design patterns.</p>
         <p class="tags"><strong>Topics:</strong> system design, hld, lld, scaling, load balancer, caching, sharding, microservices, kafka, cap theorem, design patterns</p>
+        <ul>
+          <li>Level: Advanced &mdash; final year</li>
+          <li>Duration: 10 weeks</li>
+          <li>Credits: 3</li>
+        </ul>
         <p>
           <a class="btn" href="systemdesign.html">Open Course</a>
           <a class="btn btn-alt" href="https://www.youtube.com/@ByteByteGo" target="_blank" rel="noopener">Watch Videos</a>
@@ -145,69 +162,70 @@
       </div>
     </section>
 
-    <section>
-      <h3>Why An Open Source Program?</h3>
-      <ul>
-        <li>A student in any town can follow the same syllabus as a student in a metro city</li>
-        <li>The material stays updated, because the community updates it</li>
-        <li>You learn to read official documentation &mdash; the real skill in this industry</li>
-        <li>Nothing expires. Your notes and links keep working after you graduate</li>
-        <li>You can contribute back: fix a note, add a solution, open a pull request</li>
-      </ul>
-    </section>
+    <hr>
 
     <section>
-      <h3>How The Semester Runs</h3>
-      <ol>
-        <li>Pick a track and read its syllabus table</li>
-        <li>Follow the linked open tutorial for the current module</li>
-        <li>Attend the lab session and build that module's project</li>
-        <li>Solve the practice problems on LeetCode or the GfG practice portal</li>
-        <li>Attempt the <a href="quiz.html">quiz</a> and check where you stand</li>
-        <li>Push your work to GitHub &mdash; that repository is your real certificate</li>
-      </ol>
-    </section>
-
-    <section>
-      <h3>Program At A Glance</h3>
+      <h3>Compare The Tracks</h3>
       <table>
-        <caption>Current semester numbers</caption>
         <thead>
-          <tr><th>Track</th><th>Level</th><th>Duration</th><th>Modules</th><th>Main Source</th></tr>
+          <tr>
+            <th>Course</th><th>Best Year To Take It</th><th>Main Language / Tool</th>
+            <th>Primary Source</th><th>Certificate</th>
+          </tr>
         </thead>
         <tbody>
-          <tr><td><a href="webdev.html">Web Development</a></td><td>Beginner to Intermediate</td><td>13 weeks</td><td>6</td><td>W3Schools</td></tr>
-          <tr><td><a href="aiml.html">AI / Machine Learning</a></td><td>Intermediate</td><td>14 weeks</td><td>6</td><td>GeeksforGeeks</td></tr>
-          <tr><td><a href="devops.html">DevOps</a></td><td>Intermediate</td><td>12 weeks</td><td>6</td><td>roadmap.sh</td></tr>
-          <tr><td><a href="cloud.html">Cloud Computing</a></td><td>Beginner to Intermediate</td><td>12 weeks</td><td>6</td><td>GeeksforGeeks</td></tr>
-          <tr><td><a href="dsa.html">Data Structures &amp; Algorithms</a></td><td>Core &mdash; all branches</td><td>16 weeks</td><td>6</td><td>takeUforward</td></tr>
-          <tr><td><a href="systemdesign.html">System Design</a></td><td>Advanced &mdash; final year</td><td>10 weeks</td><td>6</td><td>System Design Primer</td></tr>
+          <tr>
+            <td><a href="webdev.html">Web Development</a></td><td>1st &ndash; 2nd year</td>
+            <td>HTML, CSS, JavaScript</td>
+            <td><a href="https://www.w3schools.com/html/default.asp" target="_blank" rel="noopener">W3Schools</a></td>
+            <td>GitHub portfolio</td>
+          </tr>
+          <tr>
+            <td><a href="aiml.html">AI / Machine Learning</a></td><td>2nd &ndash; 3rd year</td>
+            <td>Python, scikit-learn</td>
+            <td><a href="https://www.geeksforgeeks.org/machine-learning/" target="_blank" rel="noopener">GeeksforGeeks</a></td>
+            <td>Kaggle profile</td>
+          </tr>
+          <tr>
+            <td><a href="devops.html">DevOps</a></td><td>3rd year</td>
+            <td>Linux, Docker, Kubernetes</td>
+            <td><a href="https://roadmap.sh/devops" target="_blank" rel="noopener">roadmap.sh</a></td>
+            <td>Live deployed app</td>
+          </tr>
+          <tr>
+            <td><a href="cloud.html">Cloud Computing</a></td><td>2nd &ndash; 3rd year</td>
+            <td>AWS, Azure, GCP</td>
+            <td><a href="https://aws.amazon.com/free/" target="_blank" rel="noopener">AWS Free Tier</a></td>
+            <td>Cloud project demo</td>
+          </tr>
+          <tr>
+            <td><a href="dsa.html">Data Structures &amp; Algorithms</a></td><td>All years</td>
+            <td>C++, Java or Python</td>
+            <td><a href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/" target="_blank" rel="noopener">takeUforward</a></td>
+            <td>Solved sheet repo</td>
+          </tr>
+          <tr>
+            <td><a href="systemdesign.html">System Design</a></td><td>Final year</td>
+            <td>Any backend language</td>
+            <td><a href="https://github.com/donnemartin/system-design-primer" target="_blank" rel="noopener">System Design Primer</a></td>
+            <td>Design document</td>
+          </tr>
         </tbody>
-        <tfoot>
-          <tr><td colspan="3">Total across all tracks</td><td>36 modules</td><td>All openly published</td></tr>
-        </tfoot>
       </table>
     </section>
 
     <section>
-      <h3>What Students Say</h3>
-      <blockquote cite="https://takeuforward.org/">
-        I finished the Striver A2Z sheet through the DSA track without ever joining a coaching class.
-        The lab sessions told me what to read next &mdash; the material was already out there in the open.
-      </blockquote>
-      <p><cite>&mdash; Final year student, Computer Science</cite></p>
-
-      <blockquote>
-        The DevOps track made me deploy my own project on a Kubernetes cluster in the college lab.
-        That one project got me shortlisted in three interviews.
-      </blockquote>
-      <p><cite>&mdash; Third year student, Information Technology</cite></p>
-    </section>
-
-    <section>
-      <h3>Study Group Counter</h3>
-      <p>Students who joined this week's open lab session: <span id="counter">0</span></p>
-      <button class="btn" onclick="increaseCounter()">Add Me</button>
+      <h3>Not Sure Where To Start?</h3>
+      <dl>
+        <dt>I am in first year and new to coding</dt>
+        <dd>Start with <a href="webdev.html">Web Development</a>, then add <a href="dsa.html">DSA</a> from semester two.</dd>
+        <dt>My placement season starts next year</dt>
+        <dd><a href="dsa.html">DSA</a> first, always. Add <a href="systemdesign.html">System Design</a> once you clear the basics.</dd>
+        <dt>I like data and mathematics</dt>
+        <dd>Go to <a href="aiml.html">AI / Machine Learning</a>. Revise Python from W3Schools before the first lab.</dd>
+        <dt>I want to work with servers and infrastructure</dt>
+        <dd>Take <a href="cloud.html">Cloud Computing</a> and <a href="devops.html">DevOps</a> together &mdash; they share a lab.</dd>
+      </dl>
     </section>
   </main>
 

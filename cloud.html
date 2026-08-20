@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cloud Computing - open source college course on Pupil">
+  <title>Cloud Computing | Pupil</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER (same on every page) ================= -->
+  <header class="site-header">
+    <div class="logo">
+      <img class="logo-icon" src="favicon.svg" alt="Pupil logo" width="42" height="42">
+      <div>
+        <h1>Pupil</h1>
+        <p class="tagline">Open Source Computer Science Curriculum &mdash; College Track</p>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="courses.html">Courses</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <nav class="course-nav">
+    <ul>
+      <li><a href="webdev.html">Web Development</a></li>
+      <li><a href="aiml.html">AI / Machine Learning</a></li>
+      <li><a href="devops.html">DevOps</a></li>
+      <li><a class="active" href="cloud.html">Cloud Computing</a></li>
+      <li><a href="dsa.html">Data Structures &amp; Algorithms</a></li>
+      <li><a href="systemdesign.html">System Design</a></li>
+    </ul>
+  </nav>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+    <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo;
+       <a href="courses.html">Courses</a> &rsaquo; <span>Cloud Computing</span></p>
+
+    <img class="banner" src="images/cloud.svg" alt="Cloud Computing course banner">
+
+    <h2>Cloud Computing</h2>
+    <p class="lead">Virtualisation, AWS, Azure and GCP core services, serverless and cloud security.</p>
+
+    <section>
+      <h3>Course Information</h3>
+      <table class="info-table">
+        <tr><th>Level</th><td>Beginner to Intermediate</td></tr>
+        <tr><th>Duration</th><td>12 weeks</td></tr>
+        <tr><th>Credits</th><td>3</td></tr>
+        <tr><th>Pre-requisite</th><td>Basic networking and Linux. Can be taken along with the DevOps track.</td></tr>
+        <tr><th>Material</th><td><strong class="open-text">Open source &mdash; every module links to its original tutorial</strong></td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>About This Track</h3>
+      <p>Cloud computing is renting computers, storage and networks instead of buying them. This track covers the service models first, then takes AWS as the main platform and shows the same ideas again in Azure and GCP so you are not locked to one vendor.</p>
+      <p>Concept notes follow the GeeksforGeeks cloud computing series and the NPTEL cloud computing lectures. All labs run inside the free tiers the cloud providers already publish &mdash; AWS Free Tier, Microsoft Learn sandboxes and Google Cloud Skills Boost.</p>
+    </section>
+
+    <section>
+      <h3>What You Will Learn</h3>
+      <ul>
+        <li>Explain IaaS, PaaS and SaaS with real examples, and the public/private/hybrid models</li>
+        <li>Understand virtualisation, hypervisors and how containers differ from virtual machines</li>
+        <li>Launch and secure an EC2 instance, store files in S3 and design a VPC</li>
+        <li>Write IAM policies that follow the least privilege rule</li>
+        <li>Build a serverless API with Lambda and API Gateway</li>
+        <li>Estimate cloud cost and apply the shared responsibility security model</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Syllabus</h3>
+      <table>
+        <caption>Module wise plan. Every row links to the open tutorial we follow for that module.</caption>
+        <thead>
+          <tr>
+            <th>#</th><th>Module</th><th>Topics Covered</th><th>Weeks</th><th>Study Material</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1</td>
+          <td><strong>Cloud Fundamentals</strong></td>
+          <td>IaaS/PaaS/SaaS, deployment models, elasticity, availability zones, SLA</td>
+          <td>2</td>
+          <td><a href="https://www.geeksforgeeks.org/cloud-computing/" target="_blank" rel="noopener">GfG Cloud Computing</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><strong>Virtualisation</strong></td>
+          <td>Hypervisors type 1 and 2, VM vs container, hardware abstraction</td>
+          <td>1</td>
+          <td><a href="https://www.geeksforgeeks.org/virtualization-cloud-computing-types/" target="_blank" rel="noopener">GfG Virtualisation</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><strong>AWS Core Services</strong></td>
+          <td>EC2, S3, EBS, VPC, subnets, security groups, IAM, RDS, CloudWatch</td>
+          <td>4</td>
+          <td><a href="https://aws.amazon.com/free/" target="_blank" rel="noopener">AWS Free Tier</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><strong>Azure &amp; GCP Basics</strong></td>
+          <td>Resource groups, Azure VMs, Blob storage, GCP Compute Engine, BigQuery</td>
+          <td>2</td>
+          <td><a href="https://learn.microsoft.com/en-us/training/azure/" target="_blank" rel="noopener">Microsoft Learn</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><strong>Serverless &amp; Storage</strong></td>
+          <td>Lambda, API Gateway, DynamoDB, S3 static hosting, CDN with CloudFront</td>
+          <td>2</td>
+          <td><a href="https://www.cloudskillsboost.google/" target="_blank" rel="noopener">Google Cloud Skills Boost</a></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><strong>Cloud Security &amp; Cost</strong></td>
+          <td>Shared responsibility, encryption, key management, billing alarms, tagging</td>
+          <td>1</td>
+          <td><a href="https://skillbuilder.aws/" target="_blank" rel="noopener">AWS Skill Builder</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Code From The Lab</h3>
+      <p>Sample from Module 5 &mdash; a serverless function that returns JSON</p>
+      <pre><code># AWS Lambda handler (Python runtime)
+import json
+
+def lambda_handler(event, context):
+    name = event.get("queryStringParameters", {}).get("name", "student")
+
+    return {
+        "statusCode": 200,
+        "headers": {"Content-Type": "application/json"},
+        "body": json.dumps({
+            "message": "Hello " + name + ", this ran without any server!"
+        })
+    }
+
+# No EC2 instance, no OS patching - you pay only per request.</code></pre>
+    </section>
+
+    <section>
+      <h3>Video Lectures</h3>
+      <p>Click the thumbnail to open the video playlist for this track:</p>
+      <a href="https://www.youtube.com/@freecodecamp" target="_blank" rel="noopener">
+        <img class="video-thumb" src="images/cloud-video.svg" alt="Watch Cloud Computing video lectures">
+      </a>
+
+      <h4>Recorded College Session</h4>
+      <video controls width="480" poster="images/cloud-video.svg">
+        <source src="videos/cloud-lecture.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        <a href="https://www.youtube.com/@freecodecamp" target="_blank" rel="noopener">Watch the lecture on YouTube instead</a>.
+      </video>
+
+      <h4>Video Playlists</h4>
+      <ul>
+        <li><a href="https://www.youtube.com/@freecodecamp" target="_blank" rel="noopener"><strong>freeCodeCamp.org</strong></a> &mdash; AWS Cloud Practitioner and Solutions Architect full courses</li>
+        <li><a href="https://www.youtube.com/@amazonwebservices" target="_blank" rel="noopener"><strong>Amazon Web Services</strong></a> &mdash; Official AWS channel with service deep dives</li>
+        <li><a href="https://www.youtube.com/results?search_query=cloud+computing+full+course+nptel" target="_blank" rel="noopener"><strong>Cloud lecture search</strong></a> &mdash; NPTEL and college lectures on cloud computing</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Open Source Study Material</h3>
+      <p>
+        These are the exact open sources the notes for this track are prepared from.
+      </p>
+      <table>
+        <thead>
+          <tr><th>Source</th><th>Best Used For</th><th>Link</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><strong>GeeksforGeeks</strong></td>
+          <td>Cloud computing tutorial plus AWS and Azure interview questions</td>
+          <td><a href="https://www.geeksforgeeks.org/cloud-computing/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>AWS Free Tier</strong></td>
+          <td>Twelve months of free-tier services to run every lab in this track</td>
+          <td><a href="https://aws.amazon.com/free/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>Microsoft Learn</strong></td>
+          <td>Azure learning paths with in-browser sandboxes</td>
+          <td><a href="https://learn.microsoft.com/en-us/training/azure/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>Google Cloud Skills Boost</strong></td>
+          <td>Guided GCP labs on the open skills platform</td>
+          <td><a href="https://www.cloudskillsboost.google/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>NPTEL</strong></td>
+          <td>Recorded Indian university lectures on cloud computing</td>
+          <td><a href="https://nptel.ac.in/courses" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>Stack Overflow</strong></td>
+          <td>The amazon-web-services tag for configuration and IAM problems</td>
+          <td><a href="https://stackoverflow.com/questions/tagged/amazon-web-services" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Lab Projects</h3>
+      <ol>
+        <li>Host your portfolio on S3 with CloudFront in front of it</li>
+        <li>Two-tier web app on EC2 with an RDS database in a private subnet</li>
+        <li>Serverless contact form using Lambda, API Gateway and DynamoDB</li>
+        <li>Cost report comparing the same workload on AWS, Azure and GCP</li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Your Progress</h3>
+      <p>Modules finished in this track:</p>
+      <progress id="progressBar" value="0" max="6"></progress>
+      <span id="progressText">0 of 6</span>
+      <p>
+        <button class="btn btn-alt" onclick="completeModule()">Mark Module Done</button>
+        <button class="btn" onclick="resetProgress()">Reset</button>
+      </p>
+      <p>Self rated confidence: <meter id="confidence" value="0" min="0" max="6">0 of 6</meter></p>
+    </section>
+
+    <hr>
+
+    <nav class="prev-next">
+      <a class="btn" href="devops.html">&laquo; DevOps</a>
+      <a class="btn" href="courses.html">All Courses</a>
+      <a class="btn" href="dsa.html">Data Structures &amp; Algorithms &raquo;</a>
+    </nav>
+  </main>
+
+  <!-- ================= FOOTER (same on every page) ================= -->
+  <footer class="site-footer">
+    <div class="footer-col">
+      <h4>Pupil</h4>
+      <p>
+        An open source computer science curriculum. The syllabus, the notes and this website
+        are all open &mdash; you can read them, fork them, and send back an improvement.
+      </p>
+    </div>
+    <div class="footer-col">
+      <h4>Courses</h4>
+      <ul>
+        <li><a href="webdev.html">Web Development</a></li>
+        <li><a href="aiml.html">AI / Machine Learning</a></li>
+        <li><a href="devops.html">DevOps</a></li>
+        <li><a href="cloud.html">Cloud Computing</a></li>
+        <li><a href="dsa.html">Data Structures &amp; Algorithms</a></li>
+        <li><a href="systemdesign.html">System Design</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>We Learn From</h4>
+      <ul>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+        <li><a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener">GeeksforGeeks</a></li>
+        <li><a href="https://stackoverflow.com/" target="_blank" rel="noopener">Stack Overflow</a></li>
+        <li><a href="https://takeuforward.org/" target="_blank" rel="noopener">takeUforward</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">MDN Web Docs</a></li>
+        <li><a href="https://roadmap.sh/" target="_blank" rel="noopener">roadmap.sh</a></li>
+      </ul>
+    </div>
+    <p class="copy">
+      &copy; <span id="year"></span> Pupil &mdash; an open source learning platform.
+      Every linked tutorial belongs to its original author.
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

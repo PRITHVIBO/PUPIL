@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Data Structures and Algorithms - open source college course on Pupil">
+  <title>Data Structures & Algorithms | Pupil</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER (same on every page) ================= -->
+  <header class="site-header">
+    <div class="logo">
+      <img class="logo-icon" src="favicon.svg" alt="Pupil logo" width="42" height="42">
+      <div>
+        <h1>Pupil</h1>
+        <p class="tagline">Open Source Computer Science Curriculum &mdash; College Track</p>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="courses.html">Courses</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <nav class="course-nav">
+    <ul>
+      <li><a href="webdev.html">Web Development</a></li>
+      <li><a href="aiml.html">AI / Machine Learning</a></li>
+      <li><a href="devops.html">DevOps</a></li>
+      <li><a href="cloud.html">Cloud Computing</a></li>
+      <li><a class="active" href="dsa.html">Data Structures &amp; Algorithms</a></li>
+      <li><a href="systemdesign.html">System Design</a></li>
+    </ul>
+  </nav>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+    <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo;
+       <a href="courses.html">Courses</a> &rsaquo; <span>Data Structures &amp; Algorithms</span></p>
+
+    <img class="banner" src="images/dsa.svg" alt="Data Structures &amp; Algorithms course banner">
+
+    <h2>Data Structures &amp; Algorithms</h2>
+    <p class="lead">The complete Striver A2Z path: arrays to graphs to dynamic programming, with 450+ problems.</p>
+
+    <section>
+      <h3>Course Information</h3>
+      <table class="info-table">
+        <tr><th>Level</th><td>Core &mdash; all branches</td></tr>
+        <tr><th>Duration</th><td>16 weeks</td></tr>
+        <tr><th>Credits</th><td>4</td></tr>
+        <tr><th>Pre-requisite</th><td>Any one language: C++, Java or Python.</td></tr>
+        <tr><th>Material</th><td><strong class="open-text">Open source &mdash; every module links to its original tutorial</strong></td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>About This Track</h3>
+      <p>DSA decides most placement results, so this is the longest track in the program. It follows the <strong>takeUforward Striver A2Z DSA Course sheet</strong> in order, from complexity analysis all the way to dynamic programming and tries.</p>
+      <p>For every topic: read the concept on GeeksforGeeks or W3Schools, watch the takeUforward video for the intuition, then solve the listed problems on LeetCode. When you are stuck on a runtime error rather than the logic, search the algorithm tag on Stack Overflow.</p>
+    </section>
+
+    <section>
+      <h3>What You Will Learn</h3>
+      <ul>
+        <li>Analyse time and space complexity and defend your answer in an interview</li>
+        <li>Apply the standard patterns: two pointers, sliding window, prefix sum, binary search on answer</li>
+        <li>Implement linked lists, stacks, queues, trees, heaps and tries from scratch</li>
+        <li>Traverse graphs with BFS and DFS, and run Dijkstra, topological sort and union-find</li>
+        <li>Recognise and solve dynamic programming problems using memoisation and tabulation</li>
+        <li>Solve 450+ curated problems and be ready for placement rounds</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Syllabus</h3>
+      <table>
+        <caption>Module wise plan. Every row links to the open tutorial we follow for that module.</caption>
+        <thead>
+          <tr>
+            <th>#</th><th>Module</th><th>Topics Covered</th><th>Weeks</th><th>Study Material</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1</td>
+          <td><strong>Complexity &amp; Basics</strong></td>
+          <td>Big-O, patterns, recursion, hashing, sorting algorithms</td>
+          <td>2</td>
+          <td><a href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/" target="_blank" rel="noopener">Striver A2Z Sheet</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><strong>Arrays &amp; Strings</strong></td>
+          <td>Two pointers, sliding window, prefix sum, Kadane, matrix problems</td>
+          <td>3</td>
+          <td><a href="https://www.geeksforgeeks.org/array-data-structure/" target="_blank" rel="noopener">GfG Arrays</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><strong>Searching &amp; Linked List</strong></td>
+          <td>Binary search on answer, singly/doubly lists, cycle detection</td>
+          <td>2</td>
+          <td><a href="https://www.w3schools.com/dsa/default.asp" target="_blank" rel="noopener">W3Schools DSA</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><strong>Stacks, Queues &amp; Heaps</strong></td>
+          <td>Monotonic stack, next greater element, priority queue, top-K</td>
+          <td>2</td>
+          <td><a href="https://www.geeksforgeeks.org/stack-data-structure/" target="_blank" rel="noopener">GfG Stack</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><strong>Trees &amp; Graphs</strong></td>
+          <td>Traversals, BST, LCA, BFS/DFS, Dijkstra, topological sort, union-find, MST</td>
+          <td>4</td>
+          <td><a href="https://takeuforward.org/graph/striver-graph-series-top-graph-interview-questions/" target="_blank" rel="noopener">Striver Graph Series</a></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><strong>Dynamic Programming &amp; Tries</strong></td>
+          <td>Memoisation, tabulation, knapsack, LIS, DP on grids and strings, tries</td>
+          <td>3</td>
+          <td><a href="https://takeuforward.org/dynamic-programming/striver-dp-series-dynamic-programming-problems/" target="_blank" rel="noopener">Striver DP Series</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Code From The Lab</h3>
+      <p>Sample from Module 3 &mdash; binary search on the answer</p>
+      <pre><code>// Smallest divisor such that the sum of results is &lt;= limit
+int smallestDivisor(vector&lt;int&gt;&amp; nums, int limit) {
+    int low = 1, high = *max_element(nums.begin(), nums.end());
+
+    while (low &lt;= high) {
+        int mid = low + (high - low) / 2;
+
+        long long sum = 0;
+        for (int n : nums) sum += (n + mid - 1) / mid;   // ceil(n/mid)
+
+        if (sum &lt;= limit) high = mid - 1;   // mid works, try smaller
+        else              low  = mid + 1;   // mid too small
+    }
+    return low;                             // O(n log max) time, O(1) space
+}</code></pre>
+    </section>
+
+    <section>
+      <h3>Video Lectures</h3>
+      <p>Click the thumbnail to open the video playlist for this track:</p>
+      <a href="https://www.youtube.com/@takeUforward" target="_blank" rel="noopener">
+        <img class="video-thumb" src="images/dsa-video.svg" alt="Watch Data Structures &amp; Algorithms video lectures">
+      </a>
+
+      <h4>Recorded College Session</h4>
+      <video controls width="480" poster="images/dsa-video.svg">
+        <source src="videos/dsa-lecture.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        <a href="https://www.youtube.com/@takeUforward" target="_blank" rel="noopener">Watch the lecture on YouTube instead</a>.
+      </video>
+
+      <h4>Video Playlists</h4>
+      <ul>
+        <li><a href="https://www.youtube.com/@takeUforward" target="_blank" rel="noopener"><strong>takeUforward (Striver)</strong></a> &mdash; The A2Z DSA course, SDE sheet, graph series and DP series</li>
+        <li><a href="https://www.youtube.com/results?search_query=abdul+bari+algorithms" target="_blank" rel="noopener"><strong>Abdul Bari</strong></a> &mdash; Algorithm theory and analysis, the way it is asked in university exams</li>
+        <li><a href="https://www.youtube.com/@freecodecamp" target="_blank" rel="noopener"><strong>freeCodeCamp.org</strong></a> &mdash; Full DSA courses in C++, Java and Python</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Open Source Study Material</h3>
+      <p>
+        These are the exact open sources the notes for this track are prepared from.
+      </p>
+      <table>
+        <thead>
+          <tr><th>Source</th><th>Best Used For</th><th>Link</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><strong>takeUforward</strong></td>
+          <td>Striver A2Z sheet &mdash; the exact problem order this track follows</td>
+          <td><a href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>takeUforward SDE Sheet</strong></td>
+          <td>191 problems most asked in product company interviews</td>
+          <td><a href="https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>GeeksforGeeks</strong></td>
+          <td>DSA tutorial, practice problems and company-wise archives</td>
+          <td><a href="https://www.geeksforgeeks.org/dsa-tutorial-learn-data-structures-and-algorithms/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>W3Schools DSA</strong></td>
+          <td>Simple animated introduction for first year students</td>
+          <td><a href="https://www.w3schools.com/dsa/default.asp" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>LeetCode</strong></td>
+          <td>Where you actually solve the problems and track your streak</td>
+          <td><a href="https://leetcode.com/problemset/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>Stack Overflow</strong></td>
+          <td>The algorithm tag when your logic is right but the code is not</td>
+          <td><a href="https://stackoverflow.com/questions/tagged/algorithm" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>CP-Algorithms</strong></td>
+          <td>Open source reference for advanced competitive programming algorithms</td>
+          <td><a href="https://cp-algorithms.com/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Lab Projects</h3>
+      <ol>
+        <li>Maintain a public GitHub repo of your A2Z sheet solutions</li>
+        <li>Visualiser for sorting algorithms built with the Web Dev track skills</li>
+        <li>Pathfinding demo showing BFS vs Dijkstra on a grid</li>
+        <li>Weekly contest log: rating, mistakes and the pattern behind each miss</li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Your Progress</h3>
+      <p>Modules finished in this track:</p>
+      <progress id="progressBar" value="0" max="6"></progress>
+      <span id="progressText">0 of 6</span>
+      <p>
+        <button class="btn btn-alt" onclick="completeModule()">Mark Module Done</button>
+        <button class="btn" onclick="resetProgress()">Reset</button>
+      </p>
+      <p>Self rated confidence: <meter id="confidence" value="0" min="0" max="6">0 of 6</meter></p>
+    </section>
+
+    <hr>
+
+    <nav class="prev-next">
+      <a class="btn" href="cloud.html">&laquo; Cloud Computing</a>
+      <a class="btn" href="courses.html">All Courses</a>
+      <a class="btn" href="systemdesign.html">System Design &raquo;</a>
+    </nav>
+  </main>
+
+  <!-- ================= FOOTER (same on every page) ================= -->
+  <footer class="site-footer">
+    <div class="footer-col">
+      <h4>Pupil</h4>
+      <p>
+        An open source computer science curriculum. The syllabus, the notes and this website
+        are all open &mdash; you can read them, fork them, and send back an improvement.
+      </p>
+    </div>
+    <div class="footer-col">
+      <h4>Courses</h4>
+      <ul>
+        <li><a href="webdev.html">Web Development</a></li>
+        <li><a href="aiml.html">AI / Machine Learning</a></li>
+        <li><a href="devops.html">DevOps</a></li>
+        <li><a href="cloud.html">Cloud Computing</a></li>
+        <li><a href="dsa.html">Data Structures &amp; Algorithms</a></li>
+        <li><a href="systemdesign.html">System Design</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>We Learn From</h4>
+      <ul>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+        <li><a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener">GeeksforGeeks</a></li>
+        <li><a href="https://stackoverflow.com/" target="_blank" rel="noopener">Stack Overflow</a></li>
+        <li><a href="https://takeuforward.org/" target="_blank" rel="noopener">takeUforward</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">MDN Web Docs</a></li>
+        <li><a href="https://roadmap.sh/" target="_blank" rel="noopener">roadmap.sh</a></li>
+      </ul>
+    </div>
+    <p class="copy">
+      &copy; <span id="year"></span> Pupil &mdash; an open source learning platform.
+      Every linked tutorial belongs to its original author.
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

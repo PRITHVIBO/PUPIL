@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 220" width="660" height="220" role="img" aria-label="Pupil open source lab">
+  <rect width="660" height="220" fill="#eaf1f8"/>
+  <rect y="150" width="660" height="70" fill="#c9dcef"/>
+  <g fill="#14355c">
+    <rect x="120" y="80" width="420" height="72"/>
+    <path d="M110 80 L330 24 L550 80 Z"/>
+    <rect x="300" y="112" width="60" height="40" fill="#ff9800"/>
+  </g>
+  <g fill="#ffffff" opacity="0.85">
+    <rect x="150" y="96" width="26" height="34"/><rect x="196" y="96" width="26" height="34"/>
+    <rect x="242" y="96" width="26" height="34"/><rect x="392" y="96" width="26" height="34"/>
+    <rect x="438" y="96" width="26" height="34"/><rect x="484" y="96" width="26" height="34"/>
+  </g>
+  <text x="330" y="192" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="bold" fill="#14355c" text-anchor="middle">Pupil - Open Source Learning Platform</text>
+</svg>

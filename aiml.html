@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AI / Machine Learning - open source college course on Pupil">
+  <title>AI / Machine Learning | Pupil</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER (same on every page) ================= -->
+  <header class="site-header">
+    <div class="logo">
+      <img class="logo-icon" src="favicon.svg" alt="Pupil logo" width="42" height="42">
+      <div>
+        <h1>Pupil</h1>
+        <p class="tagline">Open Source Computer Science Curriculum &mdash; College Track</p>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="courses.html">Courses</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <nav class="course-nav">
+    <ul>
+      <li><a href="webdev.html">Web Development</a></li>
+      <li><a class="active" href="aiml.html">AI / Machine Learning</a></li>
+      <li><a href="devops.html">DevOps</a></li>
+      <li><a href="cloud.html">Cloud Computing</a></li>
+      <li><a href="dsa.html">Data Structures &amp; Algorithms</a></li>
+      <li><a href="systemdesign.html">System Design</a></li>
+    </ul>
+  </nav>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+    <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo;
+       <a href="courses.html">Courses</a> &rsaquo; <span>AI / Machine Learning</span></p>
+
+    <img class="banner" src="images/aiml.svg" alt="AI / Machine Learning course banner">
+
+    <h2>AI / Machine Learning</h2>
+    <p class="lead">Learn Python for data, the maths behind models, and train real ML models with scikit-learn.</p>
+
+    <section>
+      <h3>Course Information</h3>
+      <table class="info-table">
+        <tr><th>Level</th><td>Intermediate</td></tr>
+        <tr><th>Duration</th><td>14 weeks</td></tr>
+        <tr><th>Credits</th><td>4</td></tr>
+        <tr><th>Pre-requisite</th><td>Basic Python and Class 12 level mathematics.</td></tr>
+        <tr><th>Material</th><td><strong class="open-text">Open source &mdash; every module links to its original tutorial</strong></td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>About This Track</h3>
+      <p>This track explains machine learning the way it is actually used: load a dataset, clean it, pick a model, measure the error, and improve it. Theory is introduced only when it is needed to understand the next step.</p>
+      <p>The written notes follow the GeeksforGeeks machine learning series and the Google Machine Learning Crash Course. Python syntax revision comes from W3Schools, datasets and hands-on notebooks come from Kaggle Learn, and every model we use is documented in the open source scikit-learn manual.</p>
+    </section>
+
+    <section>
+      <h3>What You Will Learn</h3>
+      <ul>
+        <li>Handle data with NumPy arrays and Pandas dataframes</li>
+        <li>Clean missing values, encode categories and scale features</li>
+        <li>Explain the maths of linear regression, gradient descent and cost functions</li>
+        <li>Train and compare regression, classification and clustering models</li>
+        <li>Judge a model honestly using train/test split, cross validation and confusion matrix</li>
+        <li>Build a small neural network and understand forward and back propagation</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Syllabus</h3>
+      <table>
+        <caption>Module wise plan. Every row links to the open tutorial we follow for that module.</caption>
+        <thead>
+          <tr>
+            <th>#</th><th>Module</th><th>Topics Covered</th><th>Weeks</th><th>Study Material</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1</td>
+          <td><strong>Python for Data Science</strong></td>
+          <td>Lists, dicts, comprehensions, functions, files, virtual environments</td>
+          <td>2</td>
+          <td><a href="https://www.w3schools.com/python/default.asp" target="_blank" rel="noopener">W3Schools Python</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><strong>Maths for ML</strong></td>
+          <td>Vectors, matrices, dot product, derivatives, probability, mean/variance</td>
+          <td>2</td>
+          <td><a href="https://www.geeksforgeeks.org/machine-learning/" target="_blank" rel="noopener">GfG Maths for ML</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><strong>NumPy, Pandas &amp; Plots</strong></td>
+          <td>Arrays, broadcasting, dataframes, groupby, merge, matplotlib</td>
+          <td>2</td>
+          <td><a href="https://www.kaggle.com/learn" target="_blank" rel="noopener">Kaggle Learn Pandas</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><strong>Supervised Learning</strong></td>
+          <td>Linear &amp; logistic regression, KNN, decision trees, random forest, SVM</td>
+          <td>3</td>
+          <td><a href="https://scikit-learn.org/stable/tutorial/index.html" target="_blank" rel="noopener">scikit-learn tutorial</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><strong>Unsupervised Learning</strong></td>
+          <td>K-means, hierarchical clustering, PCA, anomaly detection</td>
+          <td>2</td>
+          <td><a href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noopener">Google ML Crash Course</a></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><strong>Neural Networks &amp; NLP</strong></td>
+          <td>Perceptron, activation functions, back propagation, CNN idea, text basics</td>
+          <td>3</td>
+          <td><a href="https://www.geeksforgeeks.org/deep-learning-tutorial/" target="_blank" rel="noopener">GfG Deep Learning</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Code From The Lab</h3>
+      <p>Sample from Module 4 &mdash; your first classifier in scikit-learn</p>
+      <pre><code>from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score
+
+X, y = load_iris(return_X_y=True)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42)
+
+model = DecisionTreeClassifier(max_depth=3)
+model.fit(X_train, y_train)
+
+pred = model.predict(X_test)
+print("Accuracy:", accuracy_score(y_test, pred))</code></pre>
+    </section>
+
+    <section>
+      <h3>Video Lectures</h3>
+      <p>Click the thumbnail to open the video playlist for this track:</p>
+      <a href="https://www.youtube.com/@krishnaik06" target="_blank" rel="noopener">
+        <img class="video-thumb" src="images/aiml-video.svg" alt="Watch AI / Machine Learning video lectures">
+      </a>
+
+      <h4>Recorded College Session</h4>
+      <video controls width="480" poster="images/aiml-video.svg">
+        <source src="videos/aiml-lecture.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        <a href="https://www.youtube.com/@krishnaik06" target="_blank" rel="noopener">Watch the lecture on YouTube instead</a>.
+      </video>
+
+      <h4>Video Playlists</h4>
+      <ul>
+        <li><a href="https://www.youtube.com/@krishnaik06" target="_blank" rel="noopener"><strong>Krish Naik</strong></a> &mdash; Complete machine learning and data science playlists</li>
+        <li><a href="https://www.youtube.com/@statquest" target="_blank" rel="noopener"><strong>StatQuest with Josh Starmer</strong></a> &mdash; The clearest explanation of the maths behind each model</li>
+        <li><a href="https://www.youtube.com/@freecodecamp" target="_blank" rel="noopener"><strong>freeCodeCamp.org</strong></a> &mdash; Full length Python, ML and deep learning courses</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Open Source Study Material</h3>
+      <p>
+        These are the exact open sources the notes for this track are prepared from.
+      </p>
+      <table>
+        <thead>
+          <tr><th>Source</th><th>Best Used For</th><th>Link</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><strong>GeeksforGeeks</strong></td>
+          <td>Machine learning tutorial, algorithm by algorithm with code</td>
+          <td><a href="https://www.geeksforgeeks.org/machine-learning/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>W3Schools</strong></td>
+          <td>Python and its statistics / ML basics section with a Try-it editor</td>
+          <td><a href="https://www.w3schools.com/python/python_ml_getting_started.asp" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>Kaggle Learn</strong></td>
+          <td>Micro courses plus thousands of real datasets to practise on</td>
+          <td><a href="https://www.kaggle.com/learn" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>Google ML Crash Course</strong></td>
+          <td>Google's open course with exercises and visualisations</td>
+          <td><a href="https://developers.google.com/machine-learning/crash-course" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>scikit-learn docs</strong></td>
+          <td>Open source user guide for every model used in this track</td>
+          <td><a href="https://scikit-learn.org/stable/user_guide.html" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>Stack Overflow</strong></td>
+          <td>Debug shape errors and library issues in the machine-learning tag</td>
+          <td><a href="https://stackoverflow.com/questions/tagged/machine-learning" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Lab Projects</h3>
+      <ol>
+        <li>House price prediction using linear regression</li>
+        <li>Handwritten digit recognition on the MNIST dataset</li>
+        <li>Student performance analysis on your own college data</li>
+        <li>Spam vs not-spam message classifier with a simple NLP pipeline</li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Your Progress</h3>
+      <p>Modules finished in this track:</p>
+      <progress id="progressBar" value="0" max="6"></progress>
+      <span id="progressText">0 of 6</span>
+      <p>
+        <button class="btn btn-alt" onclick="completeModule()">Mark Module Done</button>
+        <button class="btn" onclick="resetProgress()">Reset</button>
+      </p>
+      <p>Self rated confidence: <meter id="confidence" value="0" min="0" max="6">0 of 6</meter></p>
+    </section>
+
+    <hr>
+
+    <nav class="prev-next">
+      <a class="btn" href="webdev.html">&laquo; Web Development</a>
+      <a class="btn" href="courses.html">All Courses</a>
+      <a class="btn" href="devops.html">DevOps &raquo;</a>
+    </nav>
+  </main>
+
+  <!-- ================= FOOTER (same on every page) ================= -->
+  <footer class="site-footer">
+    <div class="footer-col">
+      <h4>Pupil</h4>
+      <p>
+        An open source computer science curriculum. The syllabus, the notes and this website
+        are all open &mdash; you can read them, fork them, and send back an improvement.
+      </p>
+    </div>
+    <div class="footer-col">
+      <h4>Courses</h4>
+      <ul>
+        <li><a href="webdev.html">Web Development</a></li>
+        <li><a href="aiml.html">AI / Machine Learning</a></li>
+        <li><a href="devops.html">DevOps</a></li>
+        <li><a href="cloud.html">Cloud Computing</a></li>
+        <li><a href="dsa.html">Data Structures &amp; Algorithms</a></li>
+        <li><a href="systemdesign.html">System Design</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>We Learn From</h4>
+      <ul>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+        <li><a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener">GeeksforGeeks</a></li>
+        <li><a href="https://stackoverflow.com/" target="_blank" rel="noopener">Stack Overflow</a></li>
+        <li><a href="https://takeuforward.org/" target="_blank" rel="noopener">takeUforward</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">MDN Web Docs</a></li>
+        <li><a href="https://roadmap.sh/" target="_blank" rel="noopener">roadmap.sh</a></li>
+      </ul>
+    </div>
+    <p class="copy">
+      &copy; <span id="year"></span> Pupil &mdash; an open source learning platform.
+      Every linked tutorial belongs to its original author.
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

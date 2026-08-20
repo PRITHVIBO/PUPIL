@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Join a Pupil track, ask a doubt, or suggest an open source resource">
+  <title>Contact | Pupil</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER (same on every page) ================= -->
+  <header class="site-header">
+    <div class="logo">
+      <img class="logo-icon" src="favicon.svg" alt="Pupil logo" width="42" height="42">
+      <div>
+        <h1>Pupil</h1>
+        <p class="tagline">Open Source Computer Science Curriculum &mdash; College Track</p>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+    <h2>Contact &amp; Enrolment</h2>
+    <p class="lead">
+      Use this form to join a track, ask a doubt, or suggest an open resource we have missed.
+      Fields marked * are required.
+    </p>
+
+    <form id="contactForm" onsubmit="return validateForm()">
+
+      <fieldset>
+        <legend>Student Details</legend>
+        <p>
+          <label for="name">Full Name *</label><br>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </p>
+        <p>
+          <label for="email">College Email *</label><br>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </p>
+        <p>
+          <label for="roll">Roll Number</label><br>
+          <input type="text" id="roll" name="roll" placeholder="e.g. CS21B045">
+        </p>
+        <p>
+          <label for="phone">Phone Number</label><br>
+          <input type="tel" id="phone" name="phone" placeholder="10 digit number">
+        </p>
+        <p>
+          <label for="studyyear">Current Year</label><br>
+          <select id="studyyear" name="year">
+            <option value="">-- Choose --</option>
+            <option value="1">First year</option>
+            <option value="2">Second year</option>
+            <option value="3">Third year</option>
+            <option value="4">Final year</option>
+          </select>
+        </p>
+        <p>
+          <label for="branch">Branch</label><br>
+          <input type="text" id="branch" name="branch" placeholder="e.g. Computer Science">
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Track You Want To Join</legend>
+        <p>
+          <label for="course">Select a track *</label><br>
+          <select id="course" name="course" required>
+            <option value="">-- Choose --</option>
+            <option value="webdev">Web Development</option>
+            <option value="aiml">AI / Machine Learning</option>
+            <option value="devops">DevOps</option>
+            <option value="cloud">Cloud Computing</option>
+            <option value="dsa">Data Structures &amp; Algorithms</option>
+            <option value="systemdesign">System Design</option>
+          </select>
+        </p>
+        <p>
+          How do you prefer to study?
+          <br>
+          <label><input type="checkbox" name="mode" value="written"> Written tutorials (W3Schools, GfG)</label><br>
+          <label><input type="checkbox" name="mode" value="video"> Video playlists</label><br>
+          <label><input type="checkbox" name="mode" value="lab"> Hands-on lab sessions</label><br>
+          <label><input type="checkbox" name="mode" value="problems"> Solving problems on LeetCode</label>
+        </p>
+        <p>
+          What is this message about?
+          <br>
+          <label><input type="radio" name="reason" value="enrol" checked> Enrolment</label>
+          <label><input type="radio" name="reason" value="doubt"> Doubt in a topic</label>
+          <label><input type="radio" name="reason" value="resource"> Suggest an open resource</label>
+          <label><input type="radio" name="reason" value="other"> Other</label>
+        </p>
+        <p>
+          <label for="message">Your Message *</label><br>
+          <textarea id="message" name="message" rows="5" cols="40"
+                    placeholder="Write your question, or paste the link of the resource you want to suggest"></textarea>
+        </p>
+      </fieldset>
+
+      <p>
+        <button class="btn" type="submit">Send Message</button>
+        <button class="btn btn-alt" type="reset" onclick="clearFormMsg()">Reset Form</button>
+      </p>
+    </form>
+
+    <p id="formMsg"></p>
+
+    <hr>
+
+    <section>
+      <h3>Doubt Sessions</h3>
+      <p>Bring your laptop and the error you are stuck on. No appointment needed.</p>
+      <table>
+        <thead><tr><th>Day</th><th>Time</th><th>Track On Duty</th></tr></thead>
+        <tbody>
+          <tr><td>Monday</td><td>4:00 &ndash; 6:00 PM</td><td>Any track, general doubts</td></tr>
+          <tr><td>Tuesday</td><td>4:00 &ndash; 6:00 PM</td><td>DSA, System Design</td></tr>
+          <tr><td>Wednesday</td><td>4:00 &ndash; 6:00 PM</td><td>AI / Machine Learning</td></tr>
+          <tr><td>Thursday</td><td>4:00 &ndash; 6:00 PM</td><td>Web Development</td></tr>
+          <tr><td>Friday</td><td>3:00 &ndash; 6:00 PM</td><td>DevOps, Cloud Computing</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Contribute Instead Of Writing In</h3>
+      <p>
+        Pupil is open source, so the fastest way to fix something is to change it yourself.
+        You do not need permission for any of these:
+      </p>
+      <ul>
+        <li>Found a wrong or outdated note? Send the correction and it goes into the next update</li>
+        <li>Found a better open tutorial for a module? Suggest it on the form above</li>
+        <li>Solved a lab project in a cleaner way? Share the repository and we link it as a reference</li>
+        <li>Spotted a broken link on this site? Report it &mdash; that is the most useful bug you can send</li>
+      </ul>
+      <!-- TODO: add your project repository URL here, e.g.
+           <p><a href="https://github.com/your-org/pupil">Open an issue in the repository</a></p> -->
+    </section>
+  </main>
+
+  <!-- ================= FOOTER (same on every page) ================= -->
+  <footer class="site-footer">
+    <div class="footer-col">
+      <h4>Pupil</h4>
+      <p>
+        An open source computer science curriculum. The syllabus, the notes and this website
+        are all open &mdash; you can read them, fork them, and send back an improvement.
+      </p>
+    </div>
+    <div class="footer-col">
+      <h4>Courses</h4>
+      <ul>
+        <li><a href="webdev.html">Web Development</a></li>
+        <li><a href="aiml.html">AI / Machine Learning</a></li>
+        <li><a href="devops.html">DevOps</a></li>
+        <li><a href="cloud.html">Cloud Computing</a></li>
+        <li><a href="dsa.html">Data Structures &amp; Algorithms</a></li>
+        <li><a href="systemdesign.html">System Design</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>We Learn From</h4>
+      <ul>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+        <li><a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener">GeeksforGeeks</a></li>
+        <li><a href="https://stackoverflow.com/" target="_blank" rel="noopener">Stack Overflow</a></li>
+        <li><a href="https://takeuforward.org/" target="_blank" rel="noopener">takeUforward</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">MDN Web Docs</a></li>
+        <li><a href="https://roadmap.sh/" target="_blank" rel="noopener">roadmap.sh</a></li>
+      </ul>
+    </div>
+    <p class="copy">
+      &copy; <span id="year"></span> Pupil &mdash; an open source learning platform.
+      Every linked tutorial belongs to its original author.
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

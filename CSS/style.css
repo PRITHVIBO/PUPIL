@@ -1,44 +1,501 @@
+/* =========================================================
+   Pupil - Open Source Computer Science Curriculum
+   One stylesheet shared by every page
+   ========================================================= */
+
+/* ---------------- Global ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222222;
+  background-color: #eef2f6;
 }
 
-header {
-    background: #0066cc;
-    color: white;
-    text-align: center;
-    padding: 20px;
+h1, h2, h3, h4 {
+  margin-bottom: 10px;
+  color: #14355c;
+  line-height: 1.3;
 }
 
-.course-section {
-    padding: 30px;
+h2 { font-size: 27px; }
+h3 { font-size: 21px; margin-top: 4px; }
+h4 { font-size: 17px; margin-top: 12px; }
+
+p { margin-bottom: 10px; }
+
+a { color: #0b5cab; }
+a:hover { color: #08406f; }
+
+hr {
+  border: 0;
+  border-top: 1px solid #d5dde5;
+  margin: 26px 0;
 }
 
-.course-container {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+img { max-width: 100%; }
+
+/* ---------------- Header (same on every page) ---------------- */
+.site-header {
+  background-color: #14355c;
+  color: #ffffff;
+  padding: 14px 22px;
+  border-bottom: 4px solid #ff9800;
 }
 
-.course-card {
-    background: white;
-    width: 280px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
 }
 
-button {
-    background: #0066cc;
-    color: white;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
+.logo-icon {
+  border-radius: 6px;
 }
 
-button:hover {
-    background: #004c99;
+.site-header h1 {
+  color: #ffffff;
+  font-size: 26px;
+  margin-bottom: 0;
 }
+
+.tagline {
+  font-size: 13px;
+  color: #cfd9e5;
+  margin-bottom: 0;
+}
+
+.site-nav ul { list-style: none; margin: 0; }
+
+.site-nav li {
+  display: inline-block;
+  margin: 0 4px 4px 0;
+}
+
+.site-nav a {
+  display: inline-block;
+  padding: 7px 14px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #1d4a7c;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.site-nav a:hover { background-color: #2b6aad; color: #ffffff; }
+
+.site-nav a.active {
+  background-color: #ff9800;
+  color: #14355c;
+  font-weight: bold;
+}
+
+/* ---------------- Course switcher (course pages only) ---------------- */
+.course-nav {
+  background-color: #dbe5ef;
+  padding: 9px 22px;
+  border-bottom: 1px solid #c2d2e2;
+}
+
+.course-nav ul { list-style: none; margin: 0; }
+
+.course-nav li {
+  display: inline-block;
+  margin: 0 4px 4px 0;
+}
+
+.course-nav a {
+  display: inline-block;
+  padding: 5px 11px;
+  font-size: 13px;
+  text-decoration: none;
+  color: #14355c;
+  background-color: #ffffff;
+  border: 1px solid #b9cadb;
+  border-radius: 3px;
+}
+
+.course-nav a:hover { background-color: #f0f5fa; }
+
+.course-nav a.active {
+  background-color: #14355c;
+  color: #ffffff;
+  border-color: #14355c;
+  font-weight: bold;
+}
+
+/* ---------------- Main ---------------- */
+main {
+  max-width: 1000px;
+  margin: 22px auto;
+  padding: 26px;
+  background-color: #ffffff;
+  border: 1px solid #d9e0e7;
+  border-radius: 5px;
+}
+
+section { margin-bottom: 28px; }
+
+.lead {
+  font-size: 17px;
+  color: #445566;
+  margin-bottom: 18px;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: #667788;
+}
+
+.breadcrumb span { color: #14355c; font-weight: bold; }
+
+ul, ol, dl { margin-left: 24px; margin-bottom: 12px; }
+
+li { margin-bottom: 4px; }
+
+dt { font-weight: bold; margin-top: 10px; color: #14355c; }
+dd { margin-left: 20px; }
+
+blockquote {
+  border-left: 4px solid #ff9800;
+  background-color: #fdf6ea;
+  padding: 12px 16px;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+mark { background-color: #ffe9b8; }
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  background-color: #eef2f6;
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #1e2530;
+  color: #e6edf3;
+  padding: 14px 16px;
+  overflow-x: auto;
+  border-radius: 4px;
+  border-left: 4px solid #ff9800;
+}
+
+pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+
+details {
+  border: 1px solid #d9e0e7;
+  padding: 9px 13px;
+  margin-bottom: 8px;
+  background-color: #fafbfc;
+  border-radius: 3px;
+}
+
+summary { cursor: pointer; font-weight: bold; color: #14355c; }
+
+/* ---------------- Images ---------------- */
+.banner {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.video-thumb {
+  width: 420px;
+  max-width: 100%;
+  border-radius: 5px;
+  border: 1px solid #d9e0e7;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.video-thumb:hover { opacity: 0.9; }
+
+video {
+  max-width: 100%;
+  border-radius: 5px;
+  border: 1px solid #d9e0e7;
+  background-color: #000000;
+}
+
+/* ---------------- Hero ---------------- */
+.hero {
+  background-color: #f2f7fc;
+  border: 1px solid #d3e2f0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* ---------------- Buttons ---------------- */
+.btn {
+  display: inline-block;
+  padding: 9px 17px;
+  margin: 4px 5px 4px 0;
+  background-color: #0b5cab;
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid #0b5cab;
+  border-radius: 3px;
+  font-size: 15px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover { background-color: #094a8b; color: #ffffff; }
+
+.btn-alt {
+  background-color: #ff9800;
+  border-color: #ff9800;
+  color: #14355c;
+  font-weight: bold;
+}
+
+.btn-alt:hover { background-color: #e08600; color: #14355c; }
+
+.btn-line {
+  background-color: #ffffff;
+  color: #0b5cab;
+}
+
+.btn-line:hover { background-color: #eaf1f8; color: #0b5cab; }
+
+.prev-next {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+/* ---------------- Course cards ---------------- */
+.card-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.card {
+  flex: 1 1 290px;
+  max-width: 340px;
+  border: 1px solid #d9e0e7;
+  border-radius: 5px;
+  padding: 14px;
+  background-color: #fcfdfe;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.card h3 { font-size: 18px; margin-top: 0; }
+
+.card ul { font-size: 14px; margin-bottom: 10px; }
+
+.card p:last-child { margin-top: auto; margin-bottom: 0; }
+
+.open-text { color: #1b7a32; font-weight: bold; }
+
+/* ---------------- Tables ---------------- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+caption {
+  text-align: left;
+  font-size: 14px;
+  color: #667788;
+  padding-bottom: 7px;
+}
+
+th, td {
+  border: 1px solid #d5dde5;
+  padding: 9px 11px;
+  text-align: left;
+  font-size: 15px;
+  vertical-align: top;
+}
+
+thead th {
+  background-color: #14355c;
+  color: #ffffff;
+}
+
+tbody tr:nth-child(even) { background-color: #f5f8fa; }
+
+tfoot td {
+  font-weight: bold;
+  background-color: #eaf1f8;
+}
+
+.info-table th {
+  background-color: #eaf1f8;
+  color: #14355c;
+  width: 190px;
+}
+
+/* ---------------- Forms ---------------- */
+fieldset {
+  border: 1px solid #d5dde5;
+  padding: 16px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  background-color: #fcfdfe;
+}
+
+legend {
+  font-weight: bold;
+  color: #14355c;
+  padding: 0 7px;
+}
+
+label { font-size: 15px; }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  max-width: 420px;
+  padding: 8px;
+  border: 1px solid #b9c4cf;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 15px;
+  background-color: #ffffff;
+}
+
+input[type="radio"],
+input[type="checkbox"] { margin-right: 5px; }
+
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #2b6aad;
+  outline-offset: 1px;
+}
+
+progress { width: 260px; height: 18px; vertical-align: middle; }
+
+meter { width: 200px; height: 18px; vertical-align: middle; }
+
+/* ---------------- Result messages ---------------- */
+.success {
+  color: #14612a;
+  background-color: #e6f5ea;
+  border: 1px solid #b6dfc2;
+  padding: 11px 14px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.error {
+  color: #9c2020;
+  background-color: #fdecec;
+  border: 1px solid #f2bcbc;
+  padding: 11px 14px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.review-box {
+  border: 1px solid #d5dde5;
+  background-color: #fafbfc;
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+/* ---------------- Footer (same on every page) ---------------- */
+.site-footer {
+  background-color: #14355c;
+  color: #dfe7f0;
+  padding: 26px 22px 16px 22px;
+  margin-top: 22px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  border-top: 4px solid #ff9800;
+}
+
+.site-footer h4 {
+  color: #ffffff;
+  border-bottom: 1px solid #2b6aad;
+  padding-bottom: 6px;
+  margin-top: 0;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 210px;
+  font-size: 14px;
+}
+
+.site-footer ul { list-style: none; margin-left: 0; }
+
+.site-footer a { color: #ffd08a; text-decoration: none; }
+.site-footer a:hover { text-decoration: underline; color: #ffd08a; }
+
+.site-footer address { font-style: normal; }
+
+.copy {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #2b6aad;
+  padding-top: 14px;
+  font-size: 13px;
+  color: #b9c9dc;
+  margin-bottom: 0;
+}
+
+/* ---------------- Small screens ---------------- */
+@media (max-width: 700px) {
+  main { padding: 16px; margin: 12px; }
+  .site-nav li, .course-nav li { display: block; }
+  .site-nav a, .course-nav a { display: block; }
+  .card { max-width: 100%; }
+
+  /* wide tables scroll sideways instead of stretching the whole page */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: normal;
+  }
+  .info-table th { width: auto; }
+  progress, meter { width: 100%; }
+}
+
+/* ---------------- Card topic tags ---------------- */
+.tags {
+  font-size: 12.5px;
+  color: #5a6b7c;
+  background-color: #f2f6fa;
+  border: 1px solid #e0e8ef;
+  border-radius: 3px;
+  padding: 6px 9px;
+  margin-bottom: 10px;
+}
+
+.tags strong { color: #14355c; }

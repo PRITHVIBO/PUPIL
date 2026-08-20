@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 240" width="660" height="240" role="img" aria-label="AI / Machine Learning">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6d28d9"/><stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="660" height="240" fill="url(#g)"/>
+  <circle cx="70" cy="205" r="120" fill="#a78bfa" opacity="0.10"/>
+  <circle cx="640" cy="20" r="90" fill="#a78bfa" opacity="0.10"/>
+  <g stroke="#a78bfa" stroke-width="3" fill="#a78bfa" opacity="0.9">
+    <line x1="470" y1="70" x2="540" y2="120"/><line x1="470" y1="120" x2="540" y2="120"/>
+    <line x1="470" y1="170" x2="540" y2="120"/><line x1="540" y1="120" x2="600" y2="95"/>
+    <line x1="540" y1="120" x2="600" y2="150"/>
+    <circle cx="470" cy="70" r="11"/><circle cx="470" cy="120" r="11"/><circle cx="470" cy="170" r="11"/>
+    <circle cx="540" cy="120" r="14"/><circle cx="600" cy="95" r="11"/><circle cx="600" cy="150" r="11"/>
+  </g>
+  <text x="42" y="96" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="bold" fill="#ffffff">AI /</text>
+  <text x="42" y="136" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="bold" fill="#ffffff">Machine Learning</text>
+  <text x="42" y="168" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#a78bfa">Python - NumPy - Pandas - scikit-learn</text>
+  <rect x="42" y="188" width="116" height="26" rx="13" fill="#ff9800"/>
+  <text x="100" y="206" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#14355c" text-anchor="middle">OPEN SOURCE</text>
+</svg>

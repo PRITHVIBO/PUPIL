@@ -1,399 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Pupil - Web Development</title>
-
-    <link rel="stylesheet" href="webdev.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Web Development - open source college course on Pupil">
+  <title>Web Development | Pupil</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <header class="header">
+  <!-- ================= HEADER (same on every page) ================= -->
+  <header class="site-header">
+    <div class="logo">
+      <img class="logo-icon" src="favicon.svg" alt="Pupil logo" width="42" height="42">
+      <div>
+        <h1>Pupil</h1>
+        <p class="tagline">Open Source Computer Science Curriculum &mdash; College Track</p>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="courses.html">Courses</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <nav class="course-nav">
+    <ul>
+      <li><a class="active" href="webdev.html">Web Development</a></li>
+      <li><a href="aiml.html">AI / Machine Learning</a></li>
+      <li><a href="devops.html">DevOps</a></li>
+      <li><a href="cloud.html">Cloud Computing</a></li>
+      <li><a href="dsa.html">Data Structures &amp; Algorithms</a></li>
+      <li><a href="systemdesign.html">System Design</a></li>
+    </ul>
+  </nav>
 
-        <div class="logo">
-            Pupil
-        </div>
+  <!-- ================= MAIN ================= -->
+  <main>
+    <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo;
+       <a href="courses.html">Courses</a> &rsaquo; <span>Web Development</span></p>
 
-        <nav>
+    <img class="banner" src="images/webdev.svg" alt="Web Development course banner">
 
-            <a href="#html">HTML</a>
-            <a href="#css">CSS</a>
-            <a href="#javascript">JavaScript</a>
-            <a href="#project">Project</a>
+    <h2>Web Development</h2>
+    <p class="lead">Build real websites and full stack apps with HTML, CSS, JavaScript, React and Node.</p>
 
-        </nav>
-
-    </header>
-
-
-    <section class="hero">
-
-        <div class="hero-content">
-
-            <span class="badge">
-                Pupil Web Development
-            </span>
-
-            <h1>
-                Learn Web Development
-            </h1>
-
-            <p>
-                Learn HTML, CSS and JavaScript and build
-                your first interactive website.
-            </p>
-
-            <button onclick="startCourse()">
-                Start Course
-            </button>
-
-        </div>
-
+    <section>
+      <h3>Course Information</h3>
+      <table class="info-table">
+        <tr><th>Level</th><td>Beginner to Intermediate</td></tr>
+        <tr><th>Duration</th><td>13 weeks</td></tr>
+        <tr><th>Credits</th><td>4</td></tr>
+        <tr><th>Pre-requisite</th><td>None. Anyone from any branch can join.</td></tr>
+        <tr><th>Material</th><td><strong class="open-text">Open source &mdash; every module links to its original tutorial</strong></td></tr>
+      </table>
     </section>
 
-
-    <section class="progress-section">
-
-        <h2>Your Progress</h2>
-
-        <div class="progress-container">
-
-            <div id="progressBar"></div>
-
-        </div>
-
-        <p id="progressText">
-            0% Completed
-        </p>
-
+    <section>
+      <h3>About This Track</h3>
+      <p>This track takes you from a blank <code>.html</code> file to a deployed full stack application. Every topic is taught in the order a real project needs it: first structure, then styling, then behaviour, then the server and the database.</p>
+      <p>All study material is open. The written notes follow the W3Schools tutorials, the deeper explanations come from MDN Web Docs and GeeksforGeeks, and whenever a bug appears in the lab, the fix is searched on Stack Overflow the same way a working developer would do it.</p>
     </section>
 
-
-    <main>
-
-
-        <!-- HTML MODULE -->
-
-        <section class="module" id="html">
-
-            <div class="module-title">
-
-                <span>01</span>
-
-                <div>
-
-                    <h2>HTML</h2>
-
-                    <p>
-                        Build the structure of webpages
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="lesson-grid">
-
-                <article class="lesson">
-
-                    <h3>What is HTML?</h3>
-
-                    <p>
-                        HTML stands for HyperText Markup Language.
-                        It provides the structure of a webpage.
-                    </p>
-
-                </article>
-
-
-                <article class="lesson">
-
-                    <h3>Important Tags</h3>
-
-                    <ul>
-
-                        <li>Headings</li>
-                        <li>Paragraphs</li>
-                        <li>Links</li>
-                        <li>Images</li>
-                        <li>Forms</li>
-                        <li>Tables</li>
-
-                    </ul>
-
-                </article>
-
-            </div>
-
-
-            <div class="code-example">
-
-                <h3>Example</h3>
-
-                <pre>
-&lt;h1&gt;My Website&lt;/h1&gt;
-
-&lt;p&gt;Welcome to my website!&lt;/p&gt;
-
-&lt;button&gt;Click Me&lt;/button&gt;
-        </pre>
-
-            </div>
-
-
-            <button class="complete-btn" data-module="html">
-
-                Mark HTML Complete
-
-            </button>
-
-        </section>
-
-
-
-        <!-- CSS MODULE -->
-
-        <section class="module" id="css">
-
-            <div class="module-title">
-
-                <span>02</span>
-
-                <div>
-
-                    <h2>CSS</h2>
-
-                    <p>
-                        Design beautiful webpages
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="lesson-grid">
-
-                <article class="lesson">
-
-                    <h3>What is CSS?</h3>
-
-                    <p>
-                        CSS controls the appearance and layout
-                        of HTML elements.
-                    </p>
-
-                </article>
-
-
-                <article class="lesson">
-
-                    <h3>Important Concepts</h3>
-
-                    <ul>
-
-                        <li>Selectors</li>
-                        <li>Colors</li>
-                        <li>Box Model</li>
-                        <li>Flexbox</li>
-                        <li>Grid</li>
-                        <li>Responsive Design</li>
-
-                    </ul>
-
-                </article>
-
-            </div>
-
-
-            <div class="code-example">
-
-                <h3>Example</h3>
-
-                <pre>
-body {
-    background: #f4f4f4;
+    <section>
+      <h3>What You Will Learn</h3>
+      <ul>
+        <li>Write valid, semantic HTML5 documents with forms, tables and media</li>
+        <li>Style responsive layouts using the CSS box model, Flexbox and Grid</li>
+        <li>Use JavaScript to read and change the DOM, handle events and call APIs</li>
+        <li>Work with Git and GitHub, and open your first pull request</li>
+        <li>Build a single page app in React using components, props, state and hooks</li>
+        <li>Create a REST API with Node.js, Express and MongoDB, and deploy it free</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Syllabus</h3>
+      <table>
+        <caption>Module wise plan. Every row links to the open tutorial we follow for that module.</caption>
+        <thead>
+          <tr>
+            <th>#</th><th>Module</th><th>Topics Covered</th><th>Weeks</th><th>Study Material</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1</td>
+          <td><strong>HTML5 Foundations</strong></td>
+          <td>Tags, attributes, semantic layout, forms, tables, media, accessibility</td>
+          <td>2</td>
+          <td><a href="https://www.w3schools.com/html/default.asp" target="_blank" rel="noopener">W3Schools HTML</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><strong>CSS3 &amp; Responsive Design</strong></td>
+          <td>Selectors, box model, Flexbox, Grid, media queries, transitions</td>
+          <td>2</td>
+          <td><a href="https://www.w3schools.com/css/default.asp" target="_blank" rel="noopener">W3Schools CSS</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><strong>JavaScript Core</strong></td>
+          <td>Variables, functions, arrays, objects, DOM, events, ES6, promises, fetch</td>
+          <td>3</td>
+          <td><a href="https://www.w3schools.com/js/default.asp" target="_blank" rel="noopener">W3Schools JS</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><strong>Git &amp; GitHub</strong></td>
+          <td>init, commit, branch, merge, remote, pull requests, GitHub Pages</td>
+          <td>1</td>
+          <td><a href="https://www.w3schools.com/git/default.asp" target="_blank" rel="noopener">W3Schools Git</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><strong>React</strong></td>
+          <td>JSX, components, props, state, hooks, router, lifting state up</td>
+          <td>3</td>
+          <td><a href="https://react.dev/learn" target="_blank" rel="noopener">react.dev Learn</a></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><strong>Node, Express &amp; MongoDB</strong></td>
+          <td>npm, REST routes, middleware, CRUD, Mongoose, JWT auth, deployment</td>
+          <td>2</td>
+          <td><a href="https://www.freecodecamp.org/learn" target="_blank" rel="noopener">freeCodeCamp APIs</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Code From The Lab</h3>
+      <p>Sample from Module 3 &mdash; calling an API with fetch</p>
+      <pre><code>// Get a list of users and show their names on the page
+async function loadUsers() {
+  const res  = await fetch("https://jsonplaceholder.typicode.com/users");
+  const data = await res.json();
+
+  const list = document.getElementById("userList");
+  data.forEach(function (user) {
+    const li = document.createElement("li");
+    li.textContent = user.name + " - " + user.email;
+    list.appendChild(li);
+  });
 }
 
-h1 {
-    color: blue;
-}
-
-button {
-    padding: 10px;
-}
-        </pre>
-
-            </div>
-
-
-            <button class="complete-btn" data-module="css">
-
-                Mark CSS Complete
-
-            </button>
-
-        </section>
-
-
-
-        <!-- JAVASCRIPT MODULE -->
-
-        <section class="module" id="javascript">
-
-            <div class="module-title">
-
-                <span>03</span>
-
-                <div>
-
-                    <h2>JavaScript</h2>
-
-                    <p>
-                        Make webpages interactive
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="lesson-grid">
-
-                <article class="lesson">
-
-                    <h3>What is JavaScript?</h3>
-
-                    <p>
-                        JavaScript adds logic and interaction
-                        to webpages.
-                    </p>
-
-                </article>
-
-
-                <article class="lesson">
-
-                    <h3>Important Concepts</h3>
-
-                    <ul>
-
-                        <li>Variables</li>
-                        <li>Functions</li>
-                        <li>Arrays</li>
-                        <li>Objects</li>
-                        <li>DOM</li>
-                        <li>Events</li>
-
-                    </ul>
-
-                </article>
-
-            </div>
-
-
-            <div class="interactive-demo">
-
-                <h3>Try JavaScript</h3>
-
-                <p id="demoText">
-                    Click the button below.
-                </p>
-
-                <button onclick="runDemo()">
-                    Run JavaScript
-                </button>
-
-            </div>
-
-
-            <div class="code-example">
-
-                <h3>Example</h3>
-
-                <pre>
-const button = document.querySelector("button");
-
-button.addEventListener("click", function() {
-
-    alert("Hello Pupil!");
-
-});
-        </pre>
-
-            </div>
-
-
-            <button class="complete-btn" data-module="javascript">
-
-                Mark JavaScript Complete
-
-            </button>
-
-        </section>
-
-
-
-        <!-- FINAL PROJECT -->
-
-        <section class="project" id="project">
-
-            <h2>Final Project</h2>
-
-            <p>
-                Combine HTML, CSS and JavaScript to create
-                your own interactive webpage.
-            </p>
-
-
-            <div class="project-stack">
-
-                <div>
-                    <strong>HTML</strong>
-                    <span>Structure</span>
-                </div>
-
-                <div>
-                    <strong>CSS</strong>
-                    <span>Design</span>
-                </div>
-
-                <div>
-                    <strong>JavaScript</strong>
-                    <span>Interaction</span>
-                </div>
-
-            </div>
-
-
-            <button onclick="startProject()">
-                Start Final Project
-            </button>
-
-        </section>
-
-    </main>
-
-
-    <footer>
-
-        <p>
-            © 2026 Pupil Learning Platform
-        </p>
-
-    </footer>
-
-
-    <script src="webdev.js"></script>
-
+loadUsers();</code></pre>
+    </section>
+
+    <section>
+      <h3>Video Lectures</h3>
+      <p>Click the thumbnail to open the video playlist for this track:</p>
+      <a href="https://www.youtube.com/@freecodecamp" target="_blank" rel="noopener">
+        <img class="video-thumb" src="images/webdev-video.svg" alt="Watch Web Development video lectures">
+      </a>
+
+      <h4>Recorded College Session</h4>
+      <video controls width="480" poster="images/webdev-video.svg">
+        <source src="videos/webdev-lecture.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        <a href="https://www.youtube.com/@freecodecamp" target="_blank" rel="noopener">Watch the lecture on YouTube instead</a>.
+      </video>
+
+      <h4>Video Playlists</h4>
+      <ul>
+        <li><a href="https://www.youtube.com/@freecodecamp" target="_blank" rel="noopener"><strong>freeCodeCamp.org</strong></a> &mdash; Full length HTML, CSS, JavaScript and React courses</li>
+        <li><a href="https://www.youtube.com/@CodeWithHarry" target="_blank" rel="noopener"><strong>CodeWithHarry</strong></a> &mdash; Web development series in Hindi</li>
+        <li><a href="https://www.youtube.com/@ApnaCollegeOfficial" target="_blank" rel="noopener"><strong>Apna College</strong></a> &mdash; Full stack Delta course for college students</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Open Source Study Material</h3>
+      <p>
+        These are the exact open sources the notes for this track are prepared from.
+      </p>
+      <table>
+        <thead>
+          <tr><th>Source</th><th>Best Used For</th><th>Link</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><strong>W3Schools</strong></td>
+          <td>Short tutorials with a Try-it editor for every tag and property</td>
+          <td><a href="https://www.w3schools.com/html/default.asp" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>GeeksforGeeks</strong></td>
+          <td>Web development tutorial series and interview questions</td>
+          <td><a href="https://www.geeksforgeeks.org/web-development/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>MDN Web Docs</strong></td>
+          <td>The official reference for HTML, CSS and JavaScript</td>
+          <td><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>Stack Overflow</strong></td>
+          <td>Search your exact error message in the javascript tag</td>
+          <td><a href="https://stackoverflow.com/questions/tagged/javascript" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>The Odin Project</strong></td>
+          <td>Open full stack curriculum with projects</td>
+          <td><a href="https://www.theodinproject.com/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>roadmap.sh</strong></td>
+          <td>Visual frontend and backend roadmaps to track what is left</td>
+          <td><a href="https://roadmap.sh/frontend" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Lab Projects</h3>
+      <ol>
+        <li>Personal portfolio page hosted on GitHub Pages</li>
+        <li>College notice board with search and filter in plain JavaScript</li>
+        <li>Weather app that calls a public REST API</li>
+        <li>Full stack notes app with login, built on React + Express + MongoDB</li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Your Progress</h3>
+      <p>Modules finished in this track:</p>
+      <progress id="progressBar" value="0" max="6"></progress>
+      <span id="progressText">0 of 6</span>
+      <p>
+        <button class="btn btn-alt" onclick="completeModule()">Mark Module Done</button>
+        <button class="btn" onclick="resetProgress()">Reset</button>
+      </p>
+      <p>Self rated confidence: <meter id="confidence" value="0" min="0" max="6">0 of 6</meter></p>
+    </section>
+
+    <hr>
+
+    <nav class="prev-next">
+      <a class="btn" href="systemdesign.html">&laquo; System Design</a>
+      <a class="btn" href="courses.html">All Courses</a>
+      <a class="btn" href="aiml.html">AI / Machine Learning &raquo;</a>
+    </nav>
+  </main>
+
+  <!-- ================= FOOTER (same on every page) ================= -->
+  <footer class="site-footer">
+    <div class="footer-col">
+      <h4>Pupil</h4>
+      <p>
+        An open source computer science curriculum. The syllabus, the notes and this website
+        are all open &mdash; you can read them, fork them, and send back an improvement.
+      </p>
+    </div>
+    <div class="footer-col">
+      <h4>Courses</h4>
+      <ul>
+        <li><a href="webdev.html">Web Development</a></li>
+        <li><a href="aiml.html">AI / Machine Learning</a></li>
+        <li><a href="devops.html">DevOps</a></li>
+        <li><a href="cloud.html">Cloud Computing</a></li>
+        <li><a href="dsa.html">Data Structures &amp; Algorithms</a></li>
+        <li><a href="systemdesign.html">System Design</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>We Learn From</h4>
+      <ul>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+        <li><a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener">GeeksforGeeks</a></li>
+        <li><a href="https://stackoverflow.com/" target="_blank" rel="noopener">Stack Overflow</a></li>
+        <li><a href="https://takeuforward.org/" target="_blank" rel="noopener">takeUforward</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">MDN Web Docs</a></li>
+        <li><a href="https://roadmap.sh/" target="_blank" rel="noopener">roadmap.sh</a></li>
+      </ul>
+    </div>
+    <p class="copy">
+      &copy; <span id="year"></span> Pupil &mdash; an open source learning platform.
+      Every linked tutorial belongs to its original author.
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
-
 </html>

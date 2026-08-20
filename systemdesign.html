@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="System Design - open source college course on Pupil">
+  <title>System Design | Pupil</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER (same on every page) ================= -->
+  <header class="site-header">
+    <div class="logo">
+      <img class="logo-icon" src="favicon.svg" alt="Pupil logo" width="42" height="42">
+      <div>
+        <h1>Pupil</h1>
+        <p class="tagline">Open Source Computer Science Curriculum &mdash; College Track</p>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="courses.html">Courses</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <nav class="course-nav">
+    <ul>
+      <li><a href="webdev.html">Web Development</a></li>
+      <li><a href="aiml.html">AI / Machine Learning</a></li>
+      <li><a href="devops.html">DevOps</a></li>
+      <li><a href="cloud.html">Cloud Computing</a></li>
+      <li><a href="dsa.html">Data Structures &amp; Algorithms</a></li>
+      <li><a class="active" href="systemdesign.html">System Design</a></li>
+    </ul>
+  </nav>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+    <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo;
+       <a href="courses.html">Courses</a> &rsaquo; <span>System Design</span></p>
+
+    <img class="banner" src="images/systemdesign.svg" alt="System Design course banner">
+
+    <h2>System Design</h2>
+    <p class="lead">HLD and LLD: scaling, caching, sharding, queues, microservices and design patterns.</p>
+
+    <section>
+      <h3>Course Information</h3>
+      <table class="info-table">
+        <tr><th>Level</th><td>Advanced &mdash; final year</td></tr>
+        <tr><th>Duration</th><td>10 weeks</td></tr>
+        <tr><th>Credits</th><td>3</td></tr>
+        <tr><th>Pre-requisite</th><td>DSA track, plus basic databases and networking.</td></tr>
+        <tr><th>Material</th><td><strong class="open-text">Open source &mdash; every module links to its original tutorial</strong></td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>About This Track</h3>
+      <p>System design asks a different question from DSA: not &ldquo;what is the fastest algorithm&rdquo; but &ldquo;what happens when ten million people use this at once&rdquo;. The track is split into high level design &mdash; the boxes and arrows of a large system &mdash; and low level design, which is clean object oriented code and design patterns.</p>
+      <p>The reading list is built on the open source <strong>System Design Primer</strong> repository on GitHub and the GeeksforGeeks system design tutorial. Design patterns are studied from Refactoring Guru, and every case study ends by comparing our design with a real engineering blog.</p>
+    </section>
+
+    <section>
+      <h3>What You Will Learn</h3>
+      <ul>
+        <li>Estimate traffic, storage and bandwidth before drawing anything</li>
+        <li>Scale a system horizontally with load balancers and stateless servers</li>
+        <li>Choose the right cache strategy and handle cache invalidation</li>
+        <li>Decide between SQL and NoSQL, and shard or replicate a database</li>
+        <li>Apply the CAP theorem and explain the trade-off you accepted</li>
+        <li>Write clean LLD with SOLID principles and the common design patterns</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Syllabus</h3>
+      <table>
+        <caption>Module wise plan. Every row links to the open tutorial we follow for that module.</caption>
+        <thead>
+          <tr>
+            <th>#</th><th>Module</th><th>Topics Covered</th><th>Weeks</th><th>Study Material</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1</td>
+          <td><strong>HLD Foundations</strong></td>
+          <td>Client-server, latency numbers, capacity estimation, availability, SLA</td>
+          <td>2</td>
+          <td><a href="https://github.com/donnemartin/system-design-primer" target="_blank" rel="noopener">System Design Primer</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><strong>Scaling &amp; Load Balancing</strong></td>
+          <td>Vertical vs horizontal, load balancer algorithms, stateless design, CDN</td>
+          <td>2</td>
+          <td><a href="https://www.geeksforgeeks.org/system-design-tutorial/" target="_blank" rel="noopener">GfG System Design</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><strong>Caching &amp; Databases</strong></td>
+          <td>Redis, cache strategies, eviction, indexing, sharding, replication, CAP</td>
+          <td>2</td>
+          <td><a href="https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/" target="_blank" rel="noopener">GfG CAP Theorem</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><strong>Async &amp; Microservices</strong></td>
+          <td>Message queues, Kafka, pub-sub, API gateway, service discovery, rate limiting</td>
+          <td>2</td>
+          <td><a href="https://blog.bytebytego.com/" target="_blank" rel="noopener">ByteByteGo Blog</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><strong>Low Level Design</strong></td>
+          <td>OOP, SOLID, UML, singleton, factory, observer, strategy, decorator</td>
+          <td>1</td>
+          <td><a href="https://refactoring.guru/design-patterns" target="_blank" rel="noopener">Refactoring Guru</a></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><strong>Case Studies</strong></td>
+          <td>URL shortener, rate limiter, WhatsApp, YouTube, Uber, notification service</td>
+          <td>1</td>
+          <td><a href="https://roadmap.sh/system-design" target="_blank" rel="noopener">roadmap.sh System Design</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Code From The Lab</h3>
+      <p>Sample from Module 5 &mdash; Strategy pattern in the LLD module</p>
+      <pre><code>// One payment service, many payment methods - no if-else chain.
+interface PaymentStrategy {
+    void pay(double amount);
+}
+
+class UpiPayment implements PaymentStrategy {
+    public void pay(double amount) {
+        System.out.println("Paid " + amount + " using UPI");
+    }
+}
+
+class CardPayment implements PaymentStrategy {
+    public void pay(double amount) {
+        System.out.println("Paid " + amount + " using card");
+    }
+}
+
+class Checkout {
+    private PaymentStrategy strategy;                  // open for extension,
+    Checkout(PaymentStrategy s) { this.strategy = s; } // closed for modification
+    void placeOrder(double amount) { strategy.pay(amount); }
+}</code></pre>
+    </section>
+
+    <section>
+      <h3>Video Lectures</h3>
+      <p>Click the thumbnail to open the video playlist for this track:</p>
+      <a href="https://www.youtube.com/@ByteByteGo" target="_blank" rel="noopener">
+        <img class="video-thumb" src="images/systemdesign-video.svg" alt="Watch System Design video lectures">
+      </a>
+
+      <h4>Recorded College Session</h4>
+      <video controls width="480" poster="images/systemdesign-video.svg">
+        <source src="videos/systemdesign-lecture.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        <a href="https://www.youtube.com/@ByteByteGo" target="_blank" rel="noopener">Watch the lecture on YouTube instead</a>.
+      </video>
+
+      <h4>Video Playlists</h4>
+      <ul>
+        <li><a href="https://www.youtube.com/@ByteByteGo" target="_blank" rel="noopener"><strong>ByteByteGo</strong></a> &mdash; Short animated explanations of every core system design concept</li>
+        <li><a href="https://www.youtube.com/results?search_query=gaurav+sen+system+design" target="_blank" rel="noopener"><strong>Gaurav Sen</strong></a> &mdash; Long form system design interview walkthroughs</li>
+        <li><a href="https://www.youtube.com/results?search_query=system+design+interview+case+study" target="_blank" rel="noopener"><strong>System design case studies</strong></a> &mdash; Mock interviews and case study playlists</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Open Source Study Material</h3>
+      <p>
+        These are the exact open sources the notes for this track are prepared from.
+      </p>
+      <table>
+        <thead>
+          <tr><th>Source</th><th>Best Used For</th><th>Link</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><strong>System Design Primer</strong></td>
+          <td>The most starred open source system design repo on GitHub</td>
+          <td><a href="https://github.com/donnemartin/system-design-primer" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>GeeksforGeeks</strong></td>
+          <td>System design tutorial with HLD and LLD examples</td>
+          <td><a href="https://www.geeksforgeeks.org/system-design-tutorial/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>Refactoring Guru</strong></td>
+          <td>Design patterns explained with diagrams and code in many languages</td>
+          <td><a href="https://refactoring.guru/design-patterns" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>ByteByteGo Blog</strong></td>
+          <td>Weekly breakdowns of how large real systems are built</td>
+          <td><a href="https://blog.bytebytego.com/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>Stack Overflow</strong></td>
+          <td>The scalability and design-patterns tags for architecture debates</td>
+          <td><a href="https://stackoverflow.com/questions/tagged/scalability" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>takeUforward</strong></td>
+          <td>Low level design and OOP interview preparation</td>
+          <td><a href="https://takeuforward.org/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Lab Projects</h3>
+      <ol>
+        <li>Design a URL shortener and defend your ID generation choice</li>
+        <li>Design a rate limiter and implement the token bucket in code</li>
+        <li>LLD of a parking lot or a splitwise clone with UML diagrams</li>
+        <li>Re-design one of your own earlier projects for 1 million users</li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Your Progress</h3>
+      <p>Modules finished in this track:</p>
+      <progress id="progressBar" value="0" max="6"></progress>
+      <span id="progressText">0 of 6</span>
+      <p>
+        <button class="btn btn-alt" onclick="completeModule()">Mark Module Done</button>
+        <button class="btn" onclick="resetProgress()">Reset</button>
+      </p>
+      <p>Self rated confidence: <meter id="confidence" value="0" min="0" max="6">0 of 6</meter></p>
+    </section>
+
+    <hr>
+
+    <nav class="prev-next">
+      <a class="btn" href="dsa.html">&laquo; Data Structures &amp; Algorithms</a>
+      <a class="btn" href="courses.html">All Courses</a>
+      <a class="btn" href="webdev.html">Web Development &raquo;</a>
+    </nav>
+  </main>
+
+  <!-- ================= FOOTER (same on every page) ================= -->
+  <footer class="site-footer">
+    <div class="footer-col">
+      <h4>Pupil</h4>
+      <p>
+        An open source computer science curriculum. The syllabus, the notes and this website
+        are all open &mdash; you can read them, fork them, and send back an improvement.
+      </p>
+    </div>
+    <div class="footer-col">
+      <h4>Courses</h4>
+      <ul>
+        <li><a href="webdev.html">Web Development</a></li>
+        <li><a href="aiml.html">AI / Machine Learning</a></li>
+        <li><a href="devops.html">DevOps</a></li>
+        <li><a href="cloud.html">Cloud Computing</a></li>
+        <li><a href="dsa.html">Data Structures &amp; Algorithms</a></li>
+        <li><a href="systemdesign.html">System Design</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>We Learn From</h4>
+      <ul>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+        <li><a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener">GeeksforGeeks</a></li>
+        <li><a href="https://stackoverflow.com/" target="_blank" rel="noopener">Stack Overflow</a></li>
+        <li><a href="https://takeuforward.org/" target="_blank" rel="noopener">takeUforward</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">MDN Web Docs</a></li>
+        <li><a href="https://roadmap.sh/" target="_blank" rel="noopener">roadmap.sh</a></li>
+      </ul>
+    </div>
+    <p class="copy">
+      &copy; <span id="year"></span> Pupil &mdash; an open source learning platform.
+      Every linked tutorial belongs to its original author.
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

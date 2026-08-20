@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DevOps - open source college course on Pupil">
+  <title>DevOps | Pupil</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= HEADER (same on every page) ================= -->
+  <header class="site-header">
+    <div class="logo">
+      <img class="logo-icon" src="favicon.svg" alt="Pupil logo" width="42" height="42">
+      <div>
+        <h1>Pupil</h1>
+        <p class="tagline">Open Source Computer Science Curriculum &mdash; College Track</p>
+      </div>
+    </div>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="courses.html">Courses</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <nav class="course-nav">
+    <ul>
+      <li><a href="webdev.html">Web Development</a></li>
+      <li><a href="aiml.html">AI / Machine Learning</a></li>
+      <li><a class="active" href="devops.html">DevOps</a></li>
+      <li><a href="cloud.html">Cloud Computing</a></li>
+      <li><a href="dsa.html">Data Structures &amp; Algorithms</a></li>
+      <li><a href="systemdesign.html">System Design</a></li>
+    </ul>
+  </nav>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+    <p class="breadcrumb"><a href="index.html">Home</a> &rsaquo;
+       <a href="courses.html">Courses</a> &rsaquo; <span>DevOps</span></p>
+
+    <img class="banner" src="images/devops.svg" alt="DevOps course banner">
+
+    <h2>DevOps</h2>
+    <p class="lead">Linux, Git, Docker, Kubernetes and CI/CD pipelines that ship code automatically.</p>
+
+    <section>
+      <h3>Course Information</h3>
+      <table class="info-table">
+        <tr><th>Level</th><td>Intermediate</td></tr>
+        <tr><th>Duration</th><td>12 weeks</td></tr>
+        <tr><th>Credits</th><td>3</td></tr>
+        <tr><th>Pre-requisite</th><td>Comfort with the Linux command line and Git basics.</td></tr>
+        <tr><th>Material</th><td><strong class="open-text">Open source &mdash; every module links to its original tutorial</strong></td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h3>About This Track</h3>
+      <p>DevOps is the practice of getting code from a laptop to a running server safely and repeatedly. In this track you package an application in a container, run it on a cluster, and set up a pipeline that tests and deploys it every time someone pushes to the main branch.</p>
+      <p>The syllabus follows the open <strong>roadmap.sh DevOps roadmap</strong> step by step. Concept notes come from GeeksforGeeks, and every tool is learned from its own free official documentation &mdash; Docker, Kubernetes and GitHub Actions all publish excellent open guides.</p>
+    </section>
+
+    <section>
+      <h3>What You Will Learn</h3>
+      <ul>
+        <li>Move around Linux confidently: files, permissions, processes, systemd, shell scripts</li>
+        <li>Use Git branching strategies the way real teams do</li>
+        <li>Write a Dockerfile and run multi-container apps with Docker Compose</li>
+        <li>Deploy pods, services and deployments on Kubernetes</li>
+        <li>Build a CI/CD pipeline with GitHub Actions or Jenkins</li>
+        <li>Provision infrastructure as code with Terraform and monitor it with Prometheus and Grafana</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Syllabus</h3>
+      <table>
+        <caption>Module wise plan. Every row links to the open tutorial we follow for that module.</caption>
+        <thead>
+          <tr>
+            <th>#</th><th>Module</th><th>Topics Covered</th><th>Weeks</th><th>Study Material</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1</td>
+          <td><strong>Linux &amp; Shell Scripting</strong></td>
+          <td>File system, permissions, pipes, grep/sed/awk, cron, bash scripts</td>
+          <td>2</td>
+          <td><a href="https://linuxjourney.com/" target="_blank" rel="noopener">Linux Journey</a></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><strong>Git &amp; Version Control</strong></td>
+          <td>Branching, rebase, merge conflicts, tags, pull request workflow</td>
+          <td>1</td>
+          <td><a href="https://www.w3schools.com/git/default.asp" target="_blank" rel="noopener">W3Schools Git</a></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td><strong>Networking &amp; Servers</strong></td>
+          <td>DNS, HTTP, ports, SSH, Nginx, reverse proxy, TLS certificates</td>
+          <td>2</td>
+          <td><a href="https://www.geeksforgeeks.org/computer-network-tutorials/" target="_blank" rel="noopener">GfG Computer Networks</a></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><strong>Docker</strong></td>
+          <td>Images, layers, Dockerfile, volumes, networks, Docker Compose, registries</td>
+          <td>2</td>
+          <td><a href="https://docs.docker.com/get-started/" target="_blank" rel="noopener">Docker Get Started</a></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><strong>Kubernetes</strong></td>
+          <td>Pods, deployments, services, ConfigMaps, secrets, scaling, Helm basics</td>
+          <td>3</td>
+          <td><a href="https://kubernetes.io/docs/tutorials/kubernetes-basics/" target="_blank" rel="noopener">Kubernetes Basics</a></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><strong>CI/CD, IaC &amp; Monitoring</strong></td>
+          <td>GitHub Actions, Jenkins, Terraform, Ansible, Prometheus, Grafana</td>
+          <td>2</td>
+          <td><a href="https://docs.github.com/en/actions" target="_blank" rel="noopener">GitHub Actions Docs</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Code From The Lab</h3>
+      <p>Sample from Module 4 &mdash; a Dockerfile for the Node app built in the Web Dev track</p>
+      <pre><code>FROM node:20-alpine
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm ci --omit=dev
+
+COPY . .
+
+EXPOSE 3000
+CMD ["node", "server.js"]
+
+# Build and run it:
+#   docker build -t pupil-api .
+#   docker run -p 3000:3000 pupil-api</code></pre>
+    </section>
+
+    <section>
+      <h3>Video Lectures</h3>
+      <p>Click the thumbnail to open the video playlist for this track:</p>
+      <a href="https://www.youtube.com/@TechWorldwithNana" target="_blank" rel="noopener">
+        <img class="video-thumb" src="images/devops-video.svg" alt="Watch DevOps video lectures">
+      </a>
+
+      <h4>Recorded College Session</h4>
+      <video controls width="480" poster="images/devops-video.svg">
+        <source src="videos/devops-lecture.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        <a href="https://www.youtube.com/@TechWorldwithNana" target="_blank" rel="noopener">Watch the lecture on YouTube instead</a>.
+      </video>
+
+      <h4>Video Playlists</h4>
+      <ul>
+        <li><a href="https://www.youtube.com/@TechWorldwithNana" target="_blank" rel="noopener"><strong>TechWorld with Nana</strong></a> &mdash; Docker, Kubernetes and full DevOps bootcamp videos</li>
+        <li><a href="https://www.youtube.com/@freecodecamp" target="_blank" rel="noopener"><strong>freeCodeCamp.org</strong></a> &mdash; Long form Linux, Docker, Kubernetes and Terraform courses</li>
+        <li><a href="https://www.youtube.com/results?search_query=devops+full+course" target="_blank" rel="noopener"><strong>DevOps lecture search</strong></a> &mdash; More open lectures and college workshops on DevOps</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Open Source Study Material</h3>
+      <p>
+        These are the exact open sources the notes for this track are prepared from.
+      </p>
+      <table>
+        <thead>
+          <tr><th>Source</th><th>Best Used For</th><th>Link</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><strong>roadmap.sh</strong></td>
+          <td>The DevOps roadmap this syllabus is built on &mdash; tick topics as you finish</td>
+          <td><a href="https://roadmap.sh/devops" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>GeeksforGeeks</strong></td>
+          <td>DevOps tutorial covering culture, tools and interview questions</td>
+          <td><a href="https://www.geeksforgeeks.org/devops-tutorial/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>Docker Documentation</strong></td>
+          <td>Official guide, from first container to Compose</td>
+          <td><a href="https://docs.docker.com/get-started/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>Kubernetes Docs</strong></td>
+          <td>Interactive tutorials that run a cluster in your browser</td>
+          <td><a href="https://kubernetes.io/docs/tutorials/kubernetes-basics/" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>Stack Overflow</strong></td>
+          <td>The docker and kubernetes tags for real deployment errors</td>
+          <td><a href="https://stackoverflow.com/questions/tagged/docker" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        <tr>
+          <td><strong>W3Schools</strong></td>
+          <td>Quick Git and Bash revision before the lab exam</td>
+          <td><a href="https://www.w3schools.com/git/default.asp" target="_blank" rel="noopener">Open</a></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Lab Projects</h3>
+      <ol>
+        <li>Containerise your Web Dev project and push the image to Docker Hub</li>
+        <li>GitHub Actions pipeline that runs tests and deploys on every push</li>
+        <li>Three-tier app running on a local Kubernetes cluster (minikube or kind)</li>
+        <li>Terraform script that creates a free-tier cloud VM from scratch</li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Your Progress</h3>
+      <p>Modules finished in this track:</p>
+      <progress id="progressBar" value="0" max="6"></progress>
+      <span id="progressText">0 of 6</span>
+      <p>
+        <button class="btn btn-alt" onclick="completeModule()">Mark Module Done</button>
+        <button class="btn" onclick="resetProgress()">Reset</button>
+      </p>
+      <p>Self rated confidence: <meter id="confidence" value="0" min="0" max="6">0 of 6</meter></p>
+    </section>
+
+    <hr>
+
+    <nav class="prev-next">
+      <a class="btn" href="aiml.html">&laquo; AI / Machine Learning</a>
+      <a class="btn" href="courses.html">All Courses</a>
+      <a class="btn" href="cloud.html">Cloud Computing &raquo;</a>
+    </nav>
+  </main>
+
+  <!-- ================= FOOTER (same on every page) ================= -->
+  <footer class="site-footer">
+    <div class="footer-col">
+      <h4>Pupil</h4>
+      <p>
+        An open source computer science curriculum. The syllabus, the notes and this website
+        are all open &mdash; you can read them, fork them, and send back an improvement.
+      </p>
+    </div>
+    <div class="footer-col">
+      <h4>Courses</h4>
+      <ul>
+        <li><a href="webdev.html">Web Development</a></li>
+        <li><a href="aiml.html">AI / Machine Learning</a></li>
+        <li><a href="devops.html">DevOps</a></li>
+        <li><a href="cloud.html">Cloud Computing</a></li>
+        <li><a href="dsa.html">Data Structures &amp; Algorithms</a></li>
+        <li><a href="systemdesign.html">System Design</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>We Learn From</h4>
+      <ul>
+        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+        <li><a href="https://www.geeksforgeeks.org/" target="_blank" rel="noopener">GeeksforGeeks</a></li>
+        <li><a href="https://stackoverflow.com/" target="_blank" rel="noopener">Stack Overflow</a></li>
+        <li><a href="https://takeuforward.org/" target="_blank" rel="noopener">takeUforward</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">MDN Web Docs</a></li>
+        <li><a href="https://roadmap.sh/" target="_blank" rel="noopener">roadmap.sh</a></li>
+      </ul>
+    </div>
+    <p class="copy">
+      &copy; <span id="year"></span> Pupil &mdash; an open source learning platform.
+      Every linked tutorial belongs to its original author.
+    </p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
