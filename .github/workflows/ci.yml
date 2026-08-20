@@ -1,0 +1,55 @@
+name: PUPIL CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    name: Validate PUPIL
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify project files
+        run: |
+          test -f index.html
+          test -d CSS
+          test -d js
+          test -d images
+          echo "PUPIL project structure is valid."
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Initialize npm
+        run: npm init -y
+
+      - name: Install HTML validator
+        run: npm install --save-dev html-validate
+
+      - name: Validate HTML
+        run: npx html-validate "*.html"
+
+      - name: Build check
+        run: |
+          mkdir build
+          cp *.html build/
+          cp -r CSS build/
+          cp -r js build/
+          cp -r images build/
+          echo "Build completed successfully."
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pupil-build
+          path: build/
