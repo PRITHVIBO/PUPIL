@@ -1,4 +1,4 @@
-name: PUPIL CI
+name: PUPIL CI and Deploy
 
 on:
   push:
@@ -8,9 +8,14 @@ on:
     branches:
       - main
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   validate:
-    name: Validate PUPIL
+    name: Validate and Build PUPIL
     runs-on: ubuntu-latest
 
     steps:
@@ -39,7 +44,7 @@ jobs:
       - name: Validate HTML
         run: npx html-validate "*.html"
 
-      - name: Build check
+      - name: Build project
         run: |
           mkdir build
           cp *.html build/
@@ -53,3 +58,33 @@ jobs:
         with:
           name: pupil-build
           path: build/
+
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: validate
+    runs-on: ubuntu-latest
+
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: pupil-build
+          path: build
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
