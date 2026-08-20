@@ -12,7 +12,7 @@
 <body>
 
   <!-- ================= HEADER (same on every page) ================= -->
-  <header class="site-header">
+  <header class="site-header" aria-label="Pupil site header">
     <div class="logo">
       <img class="logo-icon" src="favicon.svg" alt="Pupil logo" width="42" height="42">
       <div>
@@ -20,7 +20,7 @@
         <p class="tagline">Open Source Computer Science Curriculum &mdash; College Track</p>
       </div>
     </div>
-    <nav class="site-nav">
+    <nav class="site-nav" aria-label="Primary navigation">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="courses.html">Courses</a></li>
@@ -33,7 +33,7 @@
   </header>
 
   <!-- ================= MAIN ================= -->
-  <main>
+  <main aria-label="Contact and enrolment content">
     <h2>Contact &amp; Enrolment</h2>
     <p class="lead">
       Use this form to join a track, ask a doubt, or suggest an open resource we have missed.
@@ -93,10 +93,10 @@
         <p>
           How do you prefer to study?
           <br>
-          <label><input type="checkbox" name="mode" value="written"> Written tutorials (W3Schools, GfG)</label><br>
-          <label><input type="checkbox" name="mode" value="video"> Video playlists</label><br>
-          <label><input type="checkbox" name="mode" value="lab"> Hands-on lab sessions</label><br>
-          <label><input type="checkbox" name="mode" value="problems"> Solving problems on LeetCode</label>
+          <label><input type="checkbox" name="mode-written" value="written"> Written tutorials (W3Schools, GfG)</label><br>
+          <label><input type="checkbox" name="mode-video" value="video"> Video playlists</label><br>
+          <label><input type="checkbox" name="mode-lab" value="lab"> Hands-on lab sessions</label><br>
+          <label><input type="checkbox" name="mode-problems" value="problems"> Solving problems on LeetCode</label>
         </p>
         <p>
           What is this message about?
@@ -121,7 +121,7 @@
 
     <p id="formMsg"></p>
 
-    <hr>
+    <div class="section-divider" aria-hidden="true"></div>
 
     <section>
       <h3>Doubt Sessions</h3>
@@ -156,7 +156,7 @@
   </main>
 
   <!-- ================= FOOTER (same on every page) ================= -->
-  <footer class="site-footer">
+  <footer class="site-footer" aria-label="Pupil site footer">
     <div class="footer-col">
       <h4>Pupil</h4>
       <p>
