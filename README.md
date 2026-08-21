@@ -8,6 +8,24 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript\&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ---
+## 🌐 Live Project
+
+🚀 **PUPIL – Open Source Computer Science Curriculum**
+
+Explore the live project here:
+
+👉 **[Visit PUPIL Live Website](https://projects.bhavyagupta.space/)**
+
+The platform provides an open-source computer science curriculum with learning tracks including:
+
+- 🌐 Web Development
+- 🤖 AI/ML
+- ⚙️ DevOps
+- ☁️ Cloud Computing
+- 💻 DSA
+- 🏗️ System Design
+
+🔗 **Live Demo:** https://projects.bhavyagupta.space/
 
 ## 📌 About PUPIL
 
